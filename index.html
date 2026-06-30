@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mantra-Śāstra: Vāk's Recursive Return as Sound-Technology · Series B · Part Nine · Cultural Musings</title>
+<style>
+:root{
+  --bg:#0c0a08;
+  --bg-paper:#13100d;
+  --bg-card:#181410;
+  --ink:#ece3d4;
+  --ink-dim:#b8ad9a;
+  --ink-faint:#7d7263;
+  --accent:#c9933f;
+  --accent-soft:#8a6a3a;
+  --accent-deep:#5e3f1f;
+  --rule:#2c241c;
+  --sanskrit:#e0b873;
+  --serif:'Tinos','Georgia','Times New Roman',serif;
+  --display:'Spectral','Georgia',serif;
+  --max:780px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-deep);}
+a:hover{color:var(--sanskrit);border-bottom-color:var(--accent);}
+header.masthead{text-align:center;padding:64px 24px 40px;border-bottom:1px solid var(--rule);background:radial-gradient(ellipse at top, #1b150e 0%, var(--bg) 70%);}
+.brand{letter-spacing:.22em;font-size:13px;color:var(--ink-faint);text-transform:uppercase;}
+.platform-sub{font-size:13px;color:var(--ink-faint);margin-top:4px;}
+.series-tag{margin-top:28px;font-size:14px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;}
+.devanagari-strip{font-size:15px;color:var(--sanskrit);margin-top:10px;letter-spacing:.04em;}
+nav.toc{max-width:var(--max);margin:36px auto 0;padding:0 24px;text-align:center;font-size:14px;line-height:2.1;}
+nav.toc a{margin:0 10px;color:var(--ink-dim);border-bottom:1px dotted var(--accent-deep);}
+nav.toc a:hover{color:var(--sanskrit);}
+nav.allparts{max-width:var(--max);margin:18px auto 0;padding:18px 24px 0;border-top:1px solid var(--rule);text-align:center;font-size:13.5px;color:var(--ink-faint);line-height:1.9;}
+nav.allparts .current{color:var(--accent);font-weight:600;}
+nav.allparts a{color:var(--ink-dim);border-bottom:1px dotted var(--rule);}
+main{max-width:var(--max);margin:0 auto;padding:0 24px 80px;}
+.title-block{padding:56px 0 24px;text-align:center;}
+.title-block .kicker{font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;}
+.title-block h1{font-family:var(--display);font-size:42px;line-height:1.18;font-weight:600;margin:0 0 18px;color:#f4ead8;}
+.title-block h2.subtitle{font-family:var(--serif);font-style:italic;font-weight:400;font-size:21px;color:var(--ink-dim);margin:0 0 30px;line-height:1.5;}
+.meta-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;font-size:14px;color:var(--ink-faint);margin-top:18px;}
+.meta-grid b{color:var(--ink-dim);font-weight:600;}
+.ornament{text-align:center;color:var(--accent-soft);font-size:20px;margin:40px 0;letter-spacing:.4em;}
+section.context-box, section.preview-box{background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:32px 32px;margin:32px 0;}
+section.context-box h3, section.preview-box h3{font-family:var(--display);color:var(--sanskrit);font-size:20px;margin-top:0;}
+section.context-box h4, section.preview-box h4{font-size:16px;color:var(--ink-dim);margin:24px 0 8px;text-transform:uppercase;letter-spacing:.06em;}
+table.partmap{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;}
+table.partmap th, table.partmap td{border:1px solid var(--rule);padding:10px 12px;text-align:left;vertical-align:top;}
+table.partmap th{background:#1d170f;color:var(--accent);font-weight:600;}
+table.partmap tr:nth-child(even) td{background:#15110c;}
+table.partmap td.this-paper{color:var(--sanskrit);font-weight:600;}
+blockquote.pull{margin:40px 0;padding:24px 28px;border-left:3px solid var(--accent);background:linear-gradient(90deg, #1a140c, transparent);font-style:italic;font-size:18.5px;color:#ddd0b8;}
+blockquote.pull .attrib{display:block;text-align:right;font-style:normal;font-size:13px;color:var(--accent);margin-top:12px;letter-spacing:.05em;text-transform:uppercase;}
+h1.sectionhead{font-family:var(--display);font-size:14px;color:var(--accent);letter-spacing:.18em;text-transform:uppercase;margin:64px 0 4px;border-top:1px solid var(--rule);padding-top:36px;}
+h1.sectionhead + h2.sectiontitle{margin-top:6px;}
+h2.sectiontitle{font-family:var(--display);font-size:30px;line-height:1.25;color:#f4ead8;margin:0 0 28px;font-weight:600;}
+h3{font-family:var(--display);font-size:21px;color:var(--sanskrit);margin:38px 0 14px;}
+p{margin:0 0 18px;color:var(--ink);}
+.dim{color:var(--ink-dim);}
+.sanskrit-block{text-align:center;font-size:21px;color:var(--sanskrit);line-height:1.9;margin:30px 0;padding:18px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.sanskrit-block .translit{display:block;font-size:15px;font-style:italic;color:var(--ink-dim);margin-top:10px;}
+.sanskrit-block .gloss{display:block;font-size:14.5px;color:var(--ink-faint);margin-top:8px;font-style:normal;}
+.cite-source{text-align:center;font-size:13px;color:var(--ink-faint);margin-top:-22px;margin-bottom:30px;letter-spacing:.04em;}
+.accent-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:30px 0;}
+.accent-card{background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:20px;}
+.accent-card .ac-sanskrit{font-family:var(--display);font-size:24px;color:var(--sanskrit);margin-bottom:4px;}
+.accent-card .ac-roman{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;}
+.accent-card .ac-label{font-weight:600;color:var(--ink);font-size:15px;margin-bottom:8px;}
+.accent-card p{font-size:14.5px;color:var(--ink-dim);margin-bottom:8px;}
+table.datatable{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;}
+table.datatable th,table.datatable td{border:1px solid var(--rule);padding:10px 12px;text-align:left;vertical-align:top;}
+table.datatable th{background:#1d170f;color:var(--accent);}
+table.datatable tr:nth-child(even) td{background:#15110c;}
+table.datatable caption{text-align:left;font-size:14px;color:var(--ink-faint);margin-bottom:10px;font-style:italic;}
+.divider-orn{text-align:center;color:var(--accent-deep);font-size:20px;margin:46px 0;letter-spacing:.5em;}
+.formula-box{background:#161108;border:1px solid var(--accent-deep);border-radius:4px;padding:26px 30px;margin:30px 0;text-align:center;}
+.formula-box .formula-main{font-family:var(--display);font-size:20px;color:var(--sanskrit);letter-spacing:.02em;margin-bottom:10px;}
+.formula-box .formula-translit{font-size:14.5px;font-style:italic;color:var(--ink-dim);}
+.formula-box .formula-note{font-size:13.5px;color:var(--ink-faint);margin-top:14px;border-top:1px solid var(--rule);padding-top:14px;}
+.theory-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:28px 0;}
+.theory-card{background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:20px;}
+.theory-card .tc-name{font-family:var(--display);color:var(--sanskrit);font-size:17px;margin-bottom:4px;}
+.theory-card .tc-school{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px;}
+.theory-card p{font-size:14px;color:var(--ink-dim);}
+.astanga-ladder{margin:30px 0;display:flex;flex-direction:column;gap:0;}
+.astanga-rung{display:flex;align-items:stretch;border:1px solid var(--rule);margin-bottom:-1px;}
+.astanga-rung:first-child{border-radius:4px 4px 0 0;}
+.astanga-rung:last-child{border-radius:0 0 4px 4px;}
+.astanga-rung .rung-num{width:46px;min-width:46px;background:var(--accent-deep);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.05em;}
+.astanga-rung .rung-body{padding:14px 18px;flex:1;background:var(--bg-card);}
+.astanga-rung.highlight .rung-body{background:#1c160d;}
+.astanga-rung .rung-sanskrit{font-family:var(--display);font-size:20px;color:var(--sanskrit);}
+.astanga-rung .rung-roman{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+.astanga-rung .rung-def{font-size:14px;color:var(--ink-dim);}
+.astanga-rung .rung-tag{font-size:12px;color:var(--accent);font-style:italic;margin-top:6px;}
+.vrtti-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:28px 0;}
+.vrtti-card{background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:16px 18px;}
+.vrtti-card .vc-sanskrit{font-family:var(--display);font-size:20px;color:var(--sanskrit);display:block;margin-bottom:3px;}
+.vrtti-card .vc-roman{font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:8px;}
+.vrtti-card .vc-def{font-size:14px;color:var(--ink-dim);}
+.reading-note{background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:20px 24px;margin:24px 0;font-size:14.5px;color:var(--ink-dim);}
+.reading-note b{color:var(--ink);}
+.glossterm{font-family:var(--display);color:var(--sanskrit);font-size:17px;}
+dl.glossary dt{margin-top:22px;}
+dl.glossary dd{color:var(--ink-dim);font-size:14.5px;margin:6px 0 0;}
+.footnotes{font-size:14.5px;color:var(--ink-dim);}
+.footnotes li{margin-bottom:14px;}
+.samapatti-track{margin:28px 0;}
+.samapatti-stage{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px;}
+.samapatti-stage .ss-label{min-width:130px;background:var(--bg-card);border:1px solid var(--rule);border-radius:3px;padding:10px 12px;text-align:center;}
+.samapatti-stage .ss-label .ssl-sanskrit{font-family:var(--display);font-size:16px;color:var(--sanskrit);display:block;}
+.samapatti-stage .ss-label .ssl-roman{font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.04em;display:block;}
+.samapatti-stage .ss-body{flex:1;font-size:14.5px;color:var(--ink-dim);padding-top:10px;}
+.samapatti-connector{text-align:left;padding-left:57px;color:var(--accent-soft);font-size:18px;margin:-10px 0;}
+footer.papertail{text-align:center;padding:48px 24px 80px;border-top:1px solid var(--rule);margin-top:60px;}
+footer.papertail .om{font-size:24px;color:var(--accent);margin-bottom:14px;}
+footer.papertail .omtatsat{font-size:14px;color:var(--ink-faint);font-style:italic;margin-bottom:30px;}
+footer.papertail .stamp{font-size:13px;color:var(--ink-faint);line-height:1.9;}
+footer.papertail .stamp b{color:var(--ink-dim);}
+.dosha-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:30px 0;}
+.dosha-card{background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:20px;}
+.dosha-card .dc-sanskrit{font-family:var(--display);font-size:24px;color:var(--sanskrit);margin-bottom:4px;}
+.dosha-card .dc-roman{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;}
+.dosha-card p{font-size:14.5px;color:var(--ink-dim);margin-bottom:8px;}
+.angas-ladder{margin:30px 0;display:flex;flex-direction:column;gap:0;}
+.anga-rung{display:flex;align-items:stretch;border:1px solid var(--rule);margin-bottom:-1px;}
+.anga-rung:first-child{border-radius:4px 4px 0 0;}
+.anga-rung:last-child{border-radius:0 0 4px 4px;}
+.anga-rung .rung-num{width:46px;min-width:46px;background:var(--accent-deep);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--accent);font-weight:700;}
+.anga-rung .rung-body{padding:14px 18px;flex:1;background:var(--bg-card);}
+.anga-rung .rung-sanskrit{font-family:var(--display);font-size:20px;color:var(--sanskrit);}
+.anga-rung .rung-roman{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+.anga-rung .rung-def{font-size:14px;color:var(--ink-dim);}
+.tab-badge{display:inline-block;font-size:11px;color:var(--accent);border:1px solid var(--accent-deep);border-radius:3px;padding:2px 8px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+@media(max-width:600px){
+  body{font-size:16.5px;}
+  .title-block h1{font-size:30px;}
+  .title-block h2.subtitle{font-size:18px;}
+  h2.sectiontitle{font-size:24px;}
+  nav.toc a{margin:0 6px;display:inline-block;}
+  .astanga-rung .rung-num,.anga-rung .rung-num{width:34px;min-width:34px;}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="brand">Cultural Musings</div>
+  <div class="platform-sub">Vedic &amp; Śāstric Research Platform</div>
+  <div class="series-tag">Series B · Part Nine of Twelve · Extended Deep Edition, Revised and Expanded</div>
+  <div class="devanagari-strip">मन्त्रशास्त्रम् · बीजाक्षरम् · मातृका · जपः · न्यासः · नादब्रह्म · स्फोटः · श्रीविद्या · कुण्डलिनी · षट्चक्रम् · स्पन्दः · तन्त्रालोकः · पुरश्चरणम्</div>
+
+  <nav class="toc" aria-label="This paper">
+    <a href="#series-context">Series Context</a>
+    <a href="#abstract">Abstract</a>
+    <a href="#sec-1">I. Three Senses Unified</a>
+    <a href="#sec-2">II. Bīja-Mantra</a>
+    <a href="#sec-3">III. The Mātṛkā</a>
+    <a href="#sec-4">IV. Four Levels of Vāk Revisited</a>
+    <a href="#sec-5">V. Japa</a>
+    <a href="#sec-6">VI. Nyāsa</a>
+    <a href="#sec-7">VII. Mantra-Siddhi</a>
+    <a href="#sec-8">VIII. Guru-Śiṣya Transmission</a>
+    <a href="#sec-9">IX. Pratyabhijñā's Theory</a>
+    <a href="#sec-10">X. Śrī-Vidyā's Pañcadaśī</a>
+    <a href="#sec-11">XI. The Bridge: Recursive Closure</a>
+    <a href="#sec-12">XII. Forward to Part Ten</a>
+    <a href="#sec-13">XIII. Nāda-Brahman in Full</a>
+    <a href="#sec-14">XIV. Sphoṭa Revisited</a>
+    <a href="#sec-15">XV. The Three Guṇic Classes of Mantra</a>
+    <a href="#sec-16">XVI. Mantra and Prāṇa</a>
+    <a href="#sec-17">XVII. The Six Limbs of Mantra-Yoga</a>
+    <a href="#sec-18">XVIII. Gāyatrī as Paradigm Mantra</a>
+    <a href="#sec-19">XIX. Mahāvākyas as Mantra-Adjacent</a>
+    <a href="#sec-20">XX. Mantra in Buddhist Vajrayāna, with Caution</a>
+    <a href="#sec-21">XXI. Nāda-Yoga and the Return to Sāma Veda</a>
+    <a href="#sec-22">XXII. Case Study: The Fourteen Śiva-Sūtras</a>
+    <a href="#sec-23">XXIII. Mantra-Cikitsā: The Therapeutic Mantra</a>
+    <a href="#sec-24">XXIV. Mantra in Vāstu and the Yantra Revisited</a>
+    <a href="#sec-25">XXV. Regional Mantra-Schools</a>
+    <a href="#sec-26">XXVI. Synthesis: The Twelve-Term Recursive Homology</a>
+    <a href="#sec-27">XXVII. The Mātṛkā in Full Phoneme Correspondence</a>
+    <a href="#sec-28">XXVIII. Kuṇḍalinī and the Six Cakras</a>
+    <a href="#sec-29">XXIX. Samaya and Kaula: Two Approaches in Śrī-Vidyā</a>
+    <a href="#sec-30">XXX. The Spanda-Kārikā: Mantra as Vibration</a>
+    <a href="#sec-31">XXXI. Tantrāloka's Mantra-Vīrya</a>
+    <a href="#sec-32">XXXII. The Thirty-Six Tattvas and Mantra's Place</a>
+    <a href="#sec-33">XXXIII. The Three Kūṭas Deepened</a>
+    <a href="#sec-34">XXXIV. Puraścaraṇa: The Full Procedural Manual</a>
+    <a href="#sec-35">XXXV. Apūrva and Mīmāṃsā's Causal Theory of Mantra</a>
+    <a href="#sec-36">XXXVI. Case Study: Lalitā-Sahasranāma</a>
+    <a href="#sec-37">XXXVII. Austin's Speech Acts Compared, with Caution</a>
+    <a href="#sec-38">XXXVIII. Psycholinguistic Priming Compared, with Caution</a>
+    <a href="#sec-39">XXXIX. Epigraphic Case Study: Donative Inscriptions</a>
+    <a href="#sec-40">XL. Methodological Appendix</a>
+    <a href="#sec-41">XLI. Expanded Glossary</a>
+    <a href="#sec-42">XLII. Recap and Handoff to Part Ten</a>
+    <a href="#sec-43">XLIII. Closing Meta-Synthesis</a>
+    <a href="#footnotes">Footnotes</a>
+    <a href="#bibliography">Bibliography</a>
+    <a href="#glossary">Glossary</a>
+  </nav>
+
+  <nav class="allparts" aria-label="Series B — all parts">
+    <a href="#">Part I · Vāk as the Ground of Psychological Awareness</a> ·
+    <a href="#">Part II · Śabda-Bheda: The Birth of Discrimination</a> ·
+    <a href="#">Part III · Sāma Veda and the Birth of Affect</a> ·
+    <a href="#">Part IV · Nāṭyaśāstra I: Rasa</a> ·
+    <a href="#">Part V · Nāṭyaśāstra II: Abhinaya</a> ·
+    <a href="#">Part VI · Yoga-Śāstra: Citta-Vṛtti</a> ·
+    <a href="#">Part VII · Proliferation I: Vyākaraṇa, Nyāya</a> ·
+    <a href="#">Part VIII · Proliferation II: Arthaśāstra, Āyurveda</a> ·
+    <span class="current">Part IX · Mantra-Śāstra: Vāk's Recursive Return as Sound-Technology (Extended Deep Edition, Revised and Expanded)</span> ·
+    <a href="#">Part X · Case Studies</a> ·
+    <a href="#">Part XI · Dharma and Adharma</a> ·
+    <a href="#">Part XII · Pratiprasava</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="title-block">
+    <div class="kicker">Series B · Part IX of XII · White Paper · Extended Deep Edition, Revised and Expanded</div>
+    <h1>Mantra-Śāstra: Vāk's Recursive Return as Sound-Technology</h1>
+    <h2 class="subtitle">How the Discriminating Citta, Having Proliferated Outward into Polity and Body, Turns Sound Itself into a Disciplined Instrument — Bīja, Mātṛkā, Japa, Nyāsa, Kuṇḍalinī, and Mantra-Vīrya as the Closing of Vāk's Own Circle</h2>
+    <div class="meta-grid">
+      <span><b>Series</b> B · Part IX of XII</span>
+      <span><b>Vāk Level</b> The Full Catuṣpadī Recursively Re-Applied — Parā through Vaikharī, now folded back upon themselves as technique</span>
+      <span><b>Format</b> White Paper · 43 Sections · Extended Deep Edition, Revised and Expanded</span>
+      <span><b>Predecessor</b> Series B · Part VIII — Proliferation II: Arthaśāstra, Āyurveda</span>
+    </div>
+  </div>
+
+  <div class="ornament">↗</div>
+
+  <section id="series-context" class="context-box">
+    <h3>Where Part Nine Stands in the Series — and What This Revised Edition Adds</h3>
+    <p>Part Eight closed Section XXI by noting that mantra bears three technically distinct senses across the literature this series has surveyed — Vedic ritual utterance, Arthaśāstric royal counsel, and Tantric sound-technology — unified by a single efficacy-through-restricted-transmission logic, and Section XLIV named that threefold unification as the most direct thread into the present paper. Part Nine takes up that thread as its sole and proper subject. Where Part Seven examined vyākaraṇa and nyāya as discrimination applied to language and inference in the abstract, and Part Eight examined artha and āyus as discrimination applied outward into polity and body, Part Nine examines what happens when the discriminating citta turns its attention back upon Vāk itself and asks what disciplined technique can be built from sound considered not as a vehicle for meaning but as an instrument in its own right. This revised and expanded edition preserves the original twelve foundational sections and the first two expansion blocks (Sections XIII–XXII and XXIII–XXVI) exactly as previously established, and inserts a substantial new third expansion block — ten further sections, XXVII through XXXVI — carrying the paper's technical material to a considerably greater depth: the mātṛkā's full phoneme-by-phoneme correspondence to cakra and body, the kuṇḍalinī doctrine's own six-cakra vertical architecture, the Samaya/Kaula divergence internal to Śrī-Vidyā, Vasugupta's Spanda-Kārikā, Abhinavagupta's Tantrāloka and its theory of mantra-vīrya, the thirty-six-tattva cosmology's placement of mantra within a graded ontology, a deepened technical analysis of the Pañcadaśī's three kūṭas, the puraścaraṇa procedural manual, Mīmāṃsā's apūrva-doctrine set directly against mantra's own claimed causal mechanism, and a capstone case study on the Lalitā-Sahasranāma. The paper's original closing block (the two bracketed modern comparisons, the epigraphic case study, the methodological appendix, the glossary, and the closing recap and synthesis) is preserved in full, renumbered to follow this new technical material.</p>
+
+    <table class="partmap">
+      <tr><th>Part</th><th>Psychological Stage</th><th>Focus</th></tr>
+      <tr><td>I</td><td>Pre-differentiated awareness</td><td>Vāk as the Ground of Psychological Awareness</td></tr>
+      <tr><td>II</td><td>Differentiation / discernment</td><td>Śabda-Bheda: The Birth of Discrimination</td></tr>
+      <tr><td>III</td><td>Feeling-toned cognition</td><td>Sāma Veda and the Birth of Affect</td></tr>
+      <tr><td>IV</td><td>Aesthetic embodiment</td><td>Nāṭyaśāstra I: Rasa</td></tr>
+      <tr><td>V</td><td>Somatic cognition</td><td>Nāṭyaśāstra II: Abhinaya</td></tr>
+      <tr><td>VI</td><td>Self-regulation / will</td><td>Yoga-Śāstra: Citta-Vṛtti and Disciplined Attention</td></tr>
+      <tr><td>VII</td><td>Specialised cognition</td><td>Proliferation of Śāstra I: Vyākaraṇa, Nyāya</td></tr>
+      <tr><td>VIII</td><td>Social/embodied extension</td><td>Proliferation of Śāstra II: Arthaśāstra, Āyurveda</td></tr>
+      <tr><td class="this-paper">IX</td><td class="this-paper">Recursive self-application</td><td class="this-paper">This Paper — Mantra-Śāstra: Vāk Returning as Sound-Technology (Extended Deep Edition, Revised and Expanded, 43 Sections)</td></tr>
+      <tr><td>X</td><td>Applied/historical synthesis</td><td>Case Studies in Śabda-to-Śāstra Transmission</td></tr>
+      <tr><td>XI</td><td>Ethical-metaphysical synthesis</td><td>Dharma and Adharma</td></tr>
+      <tr><td>XII</td><td>Closing return</td><td>Pratiprasava: Vāk's Return and the Handoff Beyond</td></tr>
+    </table>
+  </section>
+
+  <div class="ornament">✦</div>
+
+  <section id="abstract">
+    <h2 class="sectiontitle" style="font-size:24px;">Abstract</h2>
+    <p>This paper develops a full technical reconstruction of mantra-śāstra as the recursive moment in this series' larger argument: the point at which the discriminating citta, having already specialised into grammar and logic (Part Seven) and proliferated outward into polity and body (Part Eight), turns back upon Vāk itself and converts the four-level catuṣpadī architecture established in Part One into a disciplined, repeatable, transmissible technique. The paper opens with twelve foundational sections establishing mantra's threefold sense, the bīja-mantra as a minimal sound-unit, the mātṛkā as the alphabet considered as a closed system of generative seed-sounds, japa and nyāsa as the technique's two principal disciplines, the question of mantra-siddhi, the guru-śiṣya transmission requirement, the Pratyabhijñā school's recognition-theory of mantric efficacy, and the Śrī-Vidyā system's Pañcadaśī mantra as a worked example. A first expansion block (Sections XIII–XXII) develops nāda-brahman theory, sphoṭa revisited, the three guṇic classes of mantra, mantra's relation to prāṇa, mantra-yoga's six limbs, the Gāyatrī as paradigm, the Upaniṣadic mahāvākyas, a cautious Vajrayāna comparison, nāda-yoga's return to Part Three's Sāma material, and a worked case study on the fourteen Śiva-Sūtras. A second block (Sections XXIII–XXVI) takes up therapeutic mantra-application, mantra's place within vāstu and yantra, regional mantra-schools, and a twelve-term synthesis table. A substantial third block (Sections XXVII–XXXVI), new to this revised edition, carries the paper's technical apparatus to its fullest depth: the mātṛkā's complete fifty-one-phoneme correspondence to cakra and body; the kuṇḍalinī doctrine's six-cakra vertical mantra-architecture; the Samaya/Kaula interpretive divergence within Śrī-Vidyā; Vasugupta's Spanda-Kārikā and its vibration-doctrine; Abhinavagupta's Tantrāloka and its theory of mantra-vīrya, distinguishing an awakened from a merely mechanically repeated mantra; the thirty-six-tattva cosmology's placement of mantra within a graded ontology extending Sāṃkhya's own twenty-five; a deepened technical analysis of the Pañcadaśī's three kūṭas; the puraścaraṇa procedural manual governing formal mantra-accomplishment; Mīmāṃsā's apūrva-doctrine set against mantra's own claimed causal mechanism; and a capstone case study on the Lalitā-Sahasranāma as an integrated text combining nearly every technical thread this paper develops. A closing block (Sections XXXVII–XLIII) offers two explicitly bracketed modern comparisons, a further epigraphic case study, a methodological appendix, an expanded glossary, and a closing recap and meta-synthesis preparing the handoff to Part Ten.</p>
+    <div class="reading-note">
+      <b>Reading Note</b> — This paper presupposes Part One's four-level Vāk architecture (Parā, Paśyantī, Madhyamā, Vaikharī), Part Six's triguṇa-citta theory and twenty-five-tattva Sāṃkhya framework, Part Seven's sphoṭa and pramāṇa material, and Part Eight Section XXI's three-sense mantra typology and Section XXXIV's Śrī-Cakra material. Readers unfamiliar with the catuṣpadī vocabulary will find Sections IV and XIII especially difficult without first consulting Part One. All Sanskrit technical vocabulary specific to mantra-śāstra is developed here from first principles.
+    </div>
+  </section>
+
+  <h1 class="sectionhead" id="sec-1">I.</h1>
+  <h2 class="sectiontitle">Mantra's Three Senses Unified: Restating and Extending Part Eight Section XXI</h2>
+  <h3>1.1 The Three Senses Restated</h3>
+  <p>Part Eight Section XXI distinguished three technically distinct senses borne by the single word mantra across the literature this series has surveyed: the śrauta sense (the Vedic ritual utterance whose precise phonetic recitation, governed by adhikāra, is held to be efficacy-bearing in itself, independent of the reciter's comprehension of its semantic content); the Arthaśāstric sense (the king's deliberative counsel with his ministers, Part Eight Section 5.2, governed by an elaborate apparatus of secrecy-maintenance rather than phonetic precision); and the Tantric sense (a consecrated seed-syllable or syllable-sequence, transmitted by initiation, repeated in disciplined practice, and held to effect a transformation in the practitioner's own citta or circumstance). Section XXI's own phala-conclusion identified the connecting thread across all three senses as efficacy-through-restricted-transmission: in each sense, the mantra's power is held to depend on its remaining within a bounded circle of properly qualified transmission, and to be compromised, inert, or even dangerous when that boundary is breached.</p>
+  <h3>1.2 What This Paper Adds: The Recursive Question</h3>
+  <p>Part Eight's treatment, however, addressed mantra primarily as one further instance of the tradition's general componential-proportional method (its own Section XXVI placed mantra as a single entry in a ten-domain table). This paper asks a different, more focused question Part Eight's broader survey did not have room to pursue: what, internally, makes a mantra a mantra — what distinguishes a consecrated, efficacy-bearing sound-sequence from any other sequence of phonemes a speaker might produce? Answering this question requires this paper to return to Part One's own catuṣpadī architecture and ask how each of its four levels — Parā, Paśyantī, Madhyamā, Vaikharī — participates in a mantra's structure and operation, a question Part One's own original treatment, concerned with establishing the architecture in the first place, did not yet pursue in technical depth.</p>
+  <h3>1.3 Why This Question Is the Series' Proper Recursive Closure</h3>
+  <p>This paper's organising claim, developed across its first twelve sections and confirmed by all three expansion blocks, is that mantra-śāstra is best understood not as a fourth domain alongside polity, body, and aesthetic event (Part Eight's own treatment) but as the discriminating citta's return to its own point of departure: having learned, across Parts Two through Eight, to apply disciplined discrimination to grammar, logic, statecraft, and physiology, the tradition's own internal logic predicts that discrimination would eventually be applied to Vāk itself — and mantra-śāstra is this paper's identification of where, historically and textually, that recursive application actually occurs.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-2">II.</h1>
+  <h2 class="sectiontitle">Bīja-Mantra: The Seed-Syllable as Minimal Sound-Unit</h2>
+  <h3>2.1 Definition and Basic Examples</h3>
+  <p>A bīja-mantra (seed-mantra) is a single syllable, typically built from a consonant, a vowel, and a nasalised closing anusvāra, held within the Tantric tradition to condense an entire deity, principle, or cosmic function into minimal phonetic compass. The most widely cited examples — oṃ (the praṇava, addressed separately below), hrīṃ (associated with the Devī in her Śrī-Vidyā aspect), krīṃ (associated with Kālī), and śrīṃ (associated with Lakṣmī) — are not, the tradition insists, arbitrary labels but are themselves held to be structurally isomorphic with the principle they denote, a claim this paper treats, consistent with Part Seven's own sphoṭa discussion, as a strong version of the non-arbitrary sign-theory this series has traced from Part One onward.</p>
+  <h3>2.2 The Bīja as the Mātṛkā's Minimal Compositional Unit</h3>
+  <p>Every bīja-mantra is, on the tradition's own analysis, a compound of elements drawn from the mātṛkā (Section III below) — a base consonant carrying the principle's "body," a vowel carrying its dynamic or energetic quality, and the anusvāra (or, in some bīja, the visarga) carrying its return to an undifferentiated, bindu-like closure. This compositional structure makes the bīja-mantra this paper's first concrete instance of componential decomposition (the method Part Eight traced through saptāṅga and tridoṣa alike) applied directly to sound itself.</p>
+  <h3>2.3 The Bīja's Relationship to Longer Mantras</h3>
+  <p>Longer mantras — the Pañcadaśī's fifteen syllables (Section X), the Gāyatrī's twenty-four (Section XVIII) — are themselves typically understood as elaborations built around one or more bīja, which function within the longer formula as condensed, repeatable cores; a practitioner unable to undertake a longer mantra's full discipline is frequently instructed to repeat the relevant bīja alone, a substitution the tradition treats as a genuine, if reduced, participation in the longer mantra's own efficacy rather than as a different practice altogether.</p>
+  <h3>2.4 The Praṇava as the Bīja of All Bīja</h3>
+  <p>Oṃ itself occupies, across virtually every lineage this paper surveys, a position prior to and underlying every other bīja: the Māṇḍūkya-Upaniṣad's own analysis of oṃ's three phonetic constituents (a, u, m) as corresponding respectively to the waking, dreaming, and deep-sleep states of consciousness, with the syllable's own silent resonance following the audible m corresponding to turīya, the "fourth" state beyond the three — a four-term structure this paper reads as a documented, textually explicit precursor to the four-level catuṣpadī mapping this paper's own Section 4.2 develops for mantra-practice generally, here applied specifically to states of consciousness rather than to levels of speech, but sharing the identical three-plus-one architecture.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-3">III.</h1>
+  <h2 class="sectiontitle">The Mātṛkā: The Sanskrit Alphabet as a Closed Generative System</h2>
+  <h3>3.1 Mātṛkā Defined</h3>
+  <p>The mātṛkā ("little mothers") names the fifty-one (in some enumerations fifty) phonemes of the Sanskrit alphabet considered not as Part Seven's vyākaraṇa considered them — as a linguistic inventory subject to grammatical rule — but as a closed, exhaustive, and itself sacred set of generative seed-sounds, each assigned its own presiding deity-aspect, its own placement on the body in nyāsa practice (Section VI), and its own correlated position within the Śrī-Cakra's own geometry (Part Eight Section XXXIV). Section XXVII below develops this inventory's own internal structure — its division into sixteen vowels and thirty-three to thirty-five consonants, and that division's own further correlation with the body's cakras — in full technical detail.</p>
+  <h3>3.2 The Mātṛkā and Vyākaraṇa: Two Treatments of One Inventory</h3>
+  <table class="datatable">
+    <caption>The Same Fifty-One Phonemes, Two Disciplinary Treatments</caption>
+    <tr><th>Discipline</th><th>Treats the Phoneme-Set As</th><th>Governing Concern</th></tr>
+    <tr><td>Vyākaraṇa (Part Seven)</td><td>A grammatical inventory subject to sandhi and morphological rule</td><td>Correct linguistic formation (sādhutva)</td></tr>
+    <tr><td>Mantra-Śāstra (this paper)</td><td>A closed set of generative seed-sounds, each itself deity-correlated</td><td>Efficacious sound-formation (mantra-siddhi)</td></tr>
+  </table>
+  <h3>3.3 The Mātṛkā's Place in the Catuṣpadī</h3>
+  <p>This paper proposes, as its own structural-synthetic contribution rather than a claim the primary sources state in exactly these terms, that the mātṛkā occupies the Madhyamā level of Part One's own catuṣpadī architecture more precisely than ordinary discursive speech does: where ordinary Madhyamā speech sequences phonemes toward an already-intended semantic target, mātṛkā-recitation sequences the same phonemes as a closed totality in their own right, prior to and independent of any particular sentence they might compose — a use of Madhyamā-level articulation this paper treats as deliberately suspended just short of Vaikharī's outward, communicative function.</p>
+  <h3>3.4 The Mātṛkā as Goddess: The Tradition's Own Personification</h3>
+  <p>The tradition does not merely treat the mātṛkā as an abstract inventory but personifies it directly as Mātṛkā-Devī, sometimes identified with the goddess Mātaṅgī or, in other lineages, treated as an aspect of the Devī addressed in the Pañcadaśī itself (Section X) — a personification this paper reads as the clearest possible textual confirmation that the phoneme-inventory is held by the tradition's own self-understanding to be ontologically, and not merely instrumentally, significant, anticipating the thirty-six-tattva cosmological placement this paper's own Section XXXII develops at greater length.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-4">IV.</h1>
+  <h2 class="sectiontitle">The Four Levels of Vāk Revisited: How Each Participates in a Mantra</h2>
+  <h3>4.1 Restating Part One's Architecture</h3>
+  <p>Part One established four progressively differentiated levels of speech: Parā (undifferentiated, pre-intentional ground), Paśyantī ("seeing" speech, an intentional but still unarticulated impulse-to-speak), Madhyamā (internally sequenced, articulated speech prior to outward utterance — the level Part Eight's own meta-grid identified as governing that paper's own argumentative register), and Vaikharī (fully externalised, audible utterance).</p>
+  <h3>4.2 Mapping the Mantra-Process onto the Four Levels</h3>
+  <div class="samapatti-track">
+    <div class="samapatti-stage"><div class="ss-label"><span class="ssl-sanskrit">परा</span><span class="ssl-roman">Parā</span></div><div class="ss-body">The mantra's deity or principle in its wholly undifferentiated source-aspect, prior to any specific syllabic form — what Section X's Pañcadaśī discussion calls the mantra-devatā's own svarūpa.</div></div>
+    <div class="samapatti-connector">↓</div>
+    <div class="samapatti-stage"><div class="ss-label"><span class="ssl-sanskrit">पश्यन्ती</span><span class="ssl-roman">Paśyantī</span></div><div class="ss-body">The initiatory moment (dīkṣā, Section VIII) at which a guru "sees" and confers the specific bīja or mantra-sequence appropriate to a given disciple — an act of differentiation occurring prior to any articulated recitation.</div></div>
+    <div class="samapatti-connector">↓</div>
+    <div class="samapatti-stage"><div class="ss-label"><span class="ssl-sanskrit">मध्यमा</span><span class="ssl-roman">Madhyamā</span></div><div class="ss-body">Mānasa-japa, silent internal repetition, in which the mantra is fully sequenced and articulated within the citta but never crosses into audible utterance — the tradition's own preferred mode for advanced practice (Section V.3).</div></div>
+    <div class="samapatti-connector">↓</div>
+    <div class="samapatti-stage"><div class="ss-label"><span class="ssl-sanskrit">वैखरी</span><span class="ssl-roman">Vaikharī</span></div><div class="ss-body">Vācika-japa, audible recitation — the tradition's entry-level mode, prescribed especially for beginning practitioners whose mānasa-japa is not yet sufficiently stable to sustain attention without outward support.</div></div>
+  </div>
+  <h3>4.3 Why This Mapping Matters for the Series' Larger Argument</h3>
+  <p>This four-stage mapping is, this paper argues, the single clearest documented instance in the entire literature this series has surveyed of Part One's own catuṣpadī architecture being explicitly operationalised as a graded practice-sequence rather than remaining a purely descriptive account of how speech in general occurs — confirming this paper's organising claim (Section 1.3) that mantra-śāstra is the series' recursive moment, the point at which the architecture developed to describe speech becomes a technology for working with speech. Sections XIII and XXX below develop, respectively, the nāda-brahman and Spanda-Kārikā traditions' own further technical elaborations of exactly this same four-stage progression.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-5">V.</h1>
+  <h2 class="sectiontitle">Japa: Repetition as Saṃskāra Applied to Sound</h2>
+  <h3>5.1 Japa Defined and Its Three Modes</h3>
+  <p>Japa names the disciplined, prescribed repetition of a mantra a fixed number of times (traditionally in multiples of 108, the conventional bead-count of a japa-mālā), and is classified into three modes of decreasing outward audibility: vācika (audible), upāṃśu (murmured, barely audible to the practitioner alone), and mānasa (silent, internal, Section 4.2 above).</p>
+  <h3>5.2 Japa and Part Eight's Saṃskāra-Logic</h3>
+  <p>This paper reads japa as a direct, sound-specific instance of the saṃskāra-logic Part Eight Section VIII traced through pharmacological processing, political habituation, and architectural consecration alike: just as a raw pharmacological substance requires repeated, prescribed cycles of purification to become a stable, refined formulation, and a population requires repeated, predictable governmental conduct to become stably disposed toward compliance, a mantra-syllable — on the tradition's own account — requires repeated, prescribed recitation to become, for the particular practitioner reciting it, a stable and reliably efficacious instrument; an unrepeated mantra, however correctly transmitted, remains on this account inert.</p>
+  <h3>5.3 The Progression from Vācika to Mānasa</h3>
+  <table class="datatable">
+    <caption>Japa's Three Modes and Their Place in Practice</caption>
+    <tr><th>Mode</th><th>Audibility</th><th>Prescribed Stage of Practice</th></tr>
+    <tr><td>Vācika</td><td>Fully audible</td><td>Beginning practice; outward support for an unsteady citta</td></tr>
+    <tr><td>Upāṃśu</td><td>Murmured, self-audible only</td><td>Intermediate practice</td></tr>
+    <tr><td>Mānasa</td><td>Wholly internal</td><td>Advanced practice; held by most commentators to be the most powerful of the three</td></tr>
+  </table>
+  <h3>5.4 Japa-Saṃkhyā and the Counted Mālā</h3>
+  <p>The fixed-count requirement (saṃkhyā), tracked by the bead-mālā, supplies japa's own concrete instance of the krama (fixed procedural sequence) logic Part Eight Sections VIII, XIX, and XXX traced through pharmacology, śrauta ritual, and vāstu-consecration respectively — a further documented case of this series' recurring finding that disciplined, properly sequenced, and properly counted repetition is the tradition's single general mechanism for transforming raw or inert material into a stable, transformed condition. Section XXXIV below develops the formal accomplishment-ratio (puraścaraṇa) governing exactly how large a fixed count is prescribed for a given mantra's own first full accomplishment.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-6">VI.</h1>
+  <h2 class="sectiontitle">Nyāsa: Mantra Inscribed onto the Body</h2>
+  <h3>6.1 Nyāsa Defined</h3>
+  <p>Nyāsa ("placement") names the ritual technique of assigning individual mantra-syllables, accompanied by touch and visualisation, to specific points on the practitioner's own body, a practice the Tantric corpus develops in considerable procedural detail (most systematically in the mātṛkā-nyāsa and ṣaḍaṅga-nyāsa sequences) prior to undertaking japa proper.</p>
+  <h3>6.2 Nyāsa and Part Eight's Vāstu-Puruṣa-Maṇḍala</h3>
+  <p>This paper reads nyāsa as the mantra-tradition's direct counterpart to Part Eight Section XXV's vāstu-puruṣa-maṇḍala: where the maṇḍala assigns deities to spatial zones correlated with a recumbent body's own physiological zones, nyāsa assigns mantra-syllables to the practitioner's own actual body, in effect performing on the practitioner's own person the same body-as-consecrated-grid operation Part Eight Section XXV documented at architectural scale — a further instance of this series' recurring rājya-śarīra-citta (and now mantra) homology operating at yet another, more intimate scale.</p>
+  <h3>6.3 The Six-Limb Sequence (Ṣaḍaṅga-Nyāsa)</h3>
+  <table class="datatable">
+    <caption>Ṣaḍaṅga-Nyāsa: The Six Standard Placements</caption>
+    <tr><th>Limb</th><th>Sanskrit</th><th>Typical Placement</th></tr>
+    <tr><td>1</td><td>Hṛdaya</td><td>Heart</td></tr>
+    <tr><td>2</td><td>Śiras</td><td>Crown of the head</td></tr>
+    <tr><td>3</td><td>Śikhā</td><td>Tuft/crown-lock point</td></tr>
+    <tr><td>4</td><td>Kavaca</td><td>Across the torso, as a protective "armour"</td></tr>
+    <tr><td>5</td><td>Netra</td><td>Eyes</td></tr>
+    <tr><td>6</td><td>Astra</td><td>Right palm, as a "weapon" gesture</td></tr>
+  </table>
+  <h3>6.4 Why Nyāsa Precedes Japa</h3>
+  <p>The tradition's own ordering — nyāsa first, japa following — is read by this paper's own synthetic argument as a procedural acknowledgment that the practitioner's body must itself first be brought into the mantra's own structure (consecrated, in effect, the way Part Eight Section XXXIII's vāstu-praveśa consecrates a building) before the practitioner is held to be a fit vessel for the mantra's repeated recitation — a sequencing logic directly parallel to Part Eight's own krama-priority findings.</p>
+  <h3>6.5 Mātṛkā-Nyāsa as the Full-Resolution Counterpart to Ṣaḍaṅga-Nyāsa</h3>
+  <p>Where ṣaḍaṅga-nyāsa places six syllable-groups at six points, mātṛkā-nyāsa — examined at full resolution in Section XXVII below — places each of the mātṛkā's fifty-one individual phonemes at its own distinct bodily point, supplying a far higher-resolution instance of the same body-as-grid logic; this paper treats ṣaḍaṅga-nyāsa as the practically accessible, low-resolution entry point and mātṛkā-nyāsa as that same logic's full technical elaboration.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-7">VII.</h1>
+  <h2 class="sectiontitle">Mantra-Siddhi: When Does a Mantra "Work"?</h2>
+  <h3>7.1 Siddhi Defined</h3>
+  <p>Mantra-siddhi names the state of "accomplishment" or "perfection" at which a mantra is held to have become fully efficacious for the particular practitioner who has undertaken its prescribed japa-count and nyāsa-discipline — a threshold concept structurally analogous to Part Six's own discussion of yogic siddhi (extraordinary capacity arising from sustained samādhi-practice) but specific, in this paper's own domain, to sound-practice rather than to meditative absorption generally.</p>
+  <h3>7.2 The Tradition's Own Criteria</h3>
+  <p>Classical manuals (most systematically the later Tantric paddhati literature) specify observable signs — vivid dream-content involving the mantra-devatā, spontaneous internal repetition occurring without conscious effort, a settled sense of the deity's "presence" during practice — by which a practitioner or guru may judge siddhi to have occurred, criteria this paper notes are explicitly experiential and intersubjectively reportable rather than purely doctrinal assertions, a feature this paper treats, consistent with its own Section XL methodological commitments, as textually documented practitioner-criteria rather than as this paper's own independent verification of their reliability.</p>
+  <h3>7.3 Siddhi and the Guru's Role</h3>
+  <p>Most lineages hold that siddhi cannot be reliably self-assessed and requires confirmation by a qualified guru (Section VIII), a requirement this paper reads as a further instance of the adhikāra (qualification-gating) logic Part Eight Sections XIII and XIX traced through Arthaśāstric ministerial appointment and śrauta ritual officiancy alike.</p>
+  <h3>7.4 Siddhi Distinguished from Mantra-Caitanya</h3>
+  <p>Section XXXI's treatment of Abhinavagupta's Tantrāloka introduces a further, more technical refinement this section anticipates: the distinction between siddhi (the practitioner's own accomplishment) and mantra-caitanya (the mantra's own "awakening" or "consciousness," a property the Tantrāloka holds can be present or absent in the mantra itself independent of any particular practitioner's repetition-count) — a distinction this paper treats as sufficiently technical to deserve its own full treatment below rather than collapsing it into siddhi here.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-8">VIII.</h1>
+  <h2 class="sectiontitle">The Guru-Śiṣya Transmission Requirement</h2>
+  <h3>8.1 Dīkṣā as the Mantra's Necessary Point of Origin</h3>
+  <p>Across virtually the entire Tantric and mantra-śāstric corpus, a mantra is held to be inert, or worse, potentially harmful, if adopted independently of dīkṣā (initiation) from a qualified guru belonging to an unbroken transmission-lineage (paramparā) — a requirement this paper reads as the mantra-tradition's own, most strictly enforced instance of the efficacy-through-restricted-transmission logic Part Eight Section XXI already identified as common to all three of mantra's senses.</p>
+  <h3>8.2 The Guru as the Paśyantī-Level Differentiating Agent</h3>
+  <p>This paper's own synthetic proposal (Section 4.2) reads the guru's role at dīkṣā as occupying precisely the Paśyantī level of the catuṣpadī sequence: the guru does not invent a mantra but "sees" — discerns, out of the mātṛkā's closed total inventory (Section III) — which specific bīja or mantra-sequence is appropriate to a given disciple's own citta-constitution, an act of differentiation this paper treats as structurally identical to Part One's own account of Paśyantī as intentional but still unarticulated discernment, here applied by the guru on the disciple's behalf.</p>
+  <h3>8.3 Lineage and the Problem of Corruption</h3>
+  <p>The tradition's own anxiety about lineage-corruption — a mantra transmitted by an unqualified or improperly initiated guru is held to convey no efficacy, however phonetically correct the recitation — directly parallels Part Eight Section XXI.III's account of mantra-saṃvaraṇa (the Arthaśāstric king's own secrecy-discipline) and supplies further confirmation of this paper's central efficacy-through-restriction claim from the dīkṣā-specific evidence this section has developed.</p>
+  <h3>8.4 Three Documented Modes of Dīkṣā</h3>
+  <table class="datatable">
+    <caption>Three Documented Modes of Initiatory Transmission</caption>
+    <tr><th>Mode</th><th>Sanskrit</th><th>Character</th></tr>
+    <tr><td>By touch</td><td>Sparśa-dīkṣā</td><td>Conferred through the guru's physical touch upon the disciple</td></tr>
+    <tr><td>By glance</td><td>Dṛk-dīkṣā / cakṣur-dīkṣā</td><td>Conferred through the guru's gaze alone, without physical contact</td></tr>
+    <tr><td>By will</td><td>Mānasa-dīkṣā / saṃkalpa-dīkṣā</td><td>Conferred through the guru's own internal resolve, held by some lineages to be the most advanced and subtle mode</td></tr>
+  </table>
+  <p>This graded three-mode typology — touch, glance, will, in order of decreasing outward physical mediation — supplies a further documented instance of this paper's recurring Vaikharī-to-Parā gradient (Section 4.2): sparśa-dīkṣā operates at the most externally mediated, Vaikharī-adjacent register, while mānasa-dīkṣā operates at a register this paper places considerably closer to Parā itself, the guru's own internal resolve alone proving sufficient to confer transmission.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-9">IX.</h1>
+  <h2 class="sectiontitle">Pratyabhijñā's Theory of Mantra as Self-Recognition</h2>
+  <h3>9.1 The Pratyabhijñā School in Brief</h3>
+  <p>The Pratyabhijñā ("recognition") school of non-dual Kashmir Śaivism, associated above all with Utpaladeva and his commentator Abhinavagupta (already named in Part Eight Section XXIX for his Abhinavabhāratī commentary on rasa-theory, and examined further below in Section XXXI for his Tantrāloka), develops a distinctive theory of mantric efficacy this paper has not yet placed alongside the more procedural Tantric paddhati-literature surveyed in Sections II–VIII.</p>
+  <h3>9.2 Mantra as the Self Recognising Itself</h3>
+  <p>On the Pratyabhijñā account, a mantra's efficacy does not derive primarily from its phonetic correctness or its procedural transmission (though both remain necessary preconditions) but from its capacity to occasion, in the reciting subject, a recognition (pratyabhijñā) of the subject's own already-present identity with the mantra-devatā and, at the furthest reach of the doctrine, with Śiva-consciousness itself — recitation, on this account, does not produce a new state but removes the practitioner's own mistaken sense of separation from a state already, in the school's own non-dual metaphysics, fully present.</p>
+  <h3>9.3 Relationship to Part Six's Viveka-Khyāti</h3>
+  <p>This paper notes a structural resonance, without claiming doctrinal identity, between Pratyabhijñā's recognition-model and Part Six Section V's own treatment of viveka-khyāti (discriminative realisation) as the yogic citta's own culminating achievement: both accounts treat the practitioner's defining transformation as a removal of obscuring misidentification rather than as the acquisition of a genuinely new capacity, though Pratyabhijñā's specifically non-dual Śaiva metaphysics and Yoga-darśana's own dualist puruṣa-prakṛti framework (Part Six Section 2.1) remain, this paper is careful to note, philosophically distinct systems this paper does not collapse into one another.</p>
+  <h3>9.4 Pratyabhijñā's Account of Why Phonetic Correctness Still Matters</h3>
+  <p>Even on this strongly subjective-recognition reading, Pratyabhijñā does not abandon the requirement of correct mātṛkā-based formation (Section III): the school's own position, most fully developed in Abhinavagupta's Parātrīśikā-Vivaraṇa, holds that the mātṛkā's fifty-one phonemes are themselves graded emanations of Śiva-consciousness's own self-differentiation, such that correct mantra-formation is itself already a recapitulation, in miniature, of the cosmos's own emergence from undifferentiated ground — a doctrine this paper reads as Pratyabhijñā's own theological elaboration of precisely the Parā-to-Vaikharī progression this paper's Section 4.2 has already mapped onto ordinary practice, and which Section XXXII's own thirty-six-tattva material develops at still greater cosmological resolution.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-10">X.</h1>
+  <h2 class="sectiontitle">Śrī-Vidyā's Pañcadaśī: A Worked Mantra in Full Technical Detail</h2>
+  <h3>10.1 The Pañcadaśī as a Worked Example</h3>
+  <p>The Śrī-Vidyā tradition's Pañcadaśī mantra (fifteen syllables, sometimes extended to sixteen as the Ṣoḍaśī) is examined here as a single, fully worked instance bringing together this paper's first nine sections' separate technical threads — bīja-composition, mātṛkā-derivation, kūṭa-structure (the mantra's division into three or four syllable-groups), and the mantra's own direct correlation with the Śrī-Cakra's nine āvaraṇas (Part Eight Section XXXIV). Section XXXIII below returns to this same mantra for a still more technical, phoneme-level analysis of its three kūṭas.</p>
+  <h3>10.2 The Three Kūṭas</h3>
+  <table class="datatable">
+    <caption>The Pañcadaśī's Three Kūṭa-Groups</caption>
+    <tr><th>Kūṭa</th><th>Function</th><th>Correlated Āvaraṇa-Register (Part Eight Sec. XXXIV)</th></tr>
+    <tr><td>Vāgbhava-kūṭa</td><td>Governs speech and the head/upper register</td><td>Outer āvaraṇas — worldly, productive function</td></tr>
+    <tr><td>Kāmarāja-kūṭa</td><td>Governs the heart and the middle register</td><td>Middle āvaraṇas — discriminative, transformative function</td></tr>
+    <tr><td>Śakti-kūṭa</td><td>Governs the lower register and culminating power</td><td>Inner āvaraṇas — bliss and undifferentiated source-point</td></tr>
+  </table>
+  <h3>10.3 Why This Mantra Is a Suitable Capstone Example</h3>
+  <p>The Pañcadaśī's documented three-kūṭa structure mapping outward-to-inward register precisely onto the Śrī-Cakra's own nine-āvaraṇa outward-to-inward progression (already established structurally in Part Eight Section XXXIV.III) supplies this paper's clearest single instance of mantra, geometry (yantra), and the catuṣpadī's own outward-to-Parā progression converging in one documented, continuously practised ritual object — precisely the kind of cross-domain confirmation Part Eight's own Section XXXII (on the jyotir-vaidya) treated as methodologically stronger than structural analogy alone, since it again rests on a single, documented, professionally integrated practice rather than this paper's own retrospective pattern-matching.</p>
+  <h3>10.4 A Note on Restraint</h3>
+  <p>Consistent with the dīkṣā-requirement Section VIII has just developed, this paper does not reproduce the Pañcadaśī's own syllables in full, restricting itself to structural description; the tradition's own position, which this paper respects rather than merely reports, is that the mantra's specific phonetic content belongs properly to initiated transmission rather than to open textual circulation. This same restraint governs Section XXXIII's own deeper structural treatment below.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-11">XI.</h1>
+  <h2 class="sectiontitle">The Bridge: Mantra as the Series' Recursive Closure</h2>
+  <h3>11.1 Restating the Recursive-Closure Argument</h3>
+  <p>This paper's central claim, prepared across Sections I–X, is that mantra-śāstra closes a loop this series opened in Part One: Vāk's own four-level architecture, first developed as a description of how psychological awareness differentiates into speech, becomes in mantra-śāstra a technology a practitioner actively operates — dīkṣā at Paśyantī, mānasa-japa at Madhyamā, vācika-japa at Vaikharī, siddhi as a return toward Parā.</p>
+  <h3>11.2 Mantra and the Rājya-Śarīra-Citta Homology</h3>
+  <p>This paper extends Part Eight's own rājya-śarīra-citta homology (Part Eight Section VII) by treating mantra itself as a fourth homologous term, governed by the identical proportional method this entire series has traced: a mantra, like a state or a body, is decomposed (into mātṛkā-elements, kūṭa-groups), assessed for proper proportion (correct phonetic formation, proper guru-confirmed dīkṣā), and brought toward a corrected, stabilised condition (siddhi) through disciplined, repeated, properly sequenced processing (japa) — the same decompose-assess-restore method Part Eight traced through saptāṅga and tridoṣa now confirmed in a domain internal to Vāk itself.</p>
+  <div class="formula-box">
+    <div class="formula-main">सप्ताङ्गराज्यम् → त्रिदोषशरीरम् → त्रिगुणचित्तम् → मात्रृकामन्त्रः</div>
+    <div class="formula-translit">saptāṅga-rājyam → tridoṣa-śarīram → triguṇa-cittam → mātṛkā-mantraḥ</div>
+    <div class="formula-note">A fourth homologous term, completing the proportional-method survey this series has developed across Parts Six through Nine, and uniquely recursive in that its "object" is Vāk itself, the series' own starting ground.</div>
+  </div>
+  <h3>11.3 Why This Closure Was Necessary Before Part Ten</h3>
+  <p>Part Ten's own announced task — case studies in śabda-to-śāstra transmission generally — presupposes, this paper argues, a clear prior account of mantra-śāstra's own special recursive status; without the closure this paper has developed, Part Ten's case studies would risk treating mantra as merely one further proliferated discipline among many (Part Eight's own ten- and fifteen-domain tables, read uncritically, might suggest exactly this), obscuring the structurally distinctive, self-referential relationship between mantra-śāstra and this series' own Part One starting point that this paper's eleven preceding sections, and the technical depth added in Sections XXVII–XXXVI below, have been concerned to establish.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-12">XII.</h1>
+  <h2 class="sectiontitle">Forward to Part Ten: From Recursive Technique to Historical Case Study</h2>
+  <p>This paper has developed mantra-śāstra as the series' recursive closure — the moment at which Vāk's own descriptive architecture (Part One) becomes a disciplined, transmissible technology. Part Ten's treatment of case studies in śabda-to-śāstra transmission will examine how, historically and institutionally, the particular śāstras this series has surveyed (vyākaraṇa, nyāya, arthaśāstra, āyurveda, and now mantra-śāstra itself) were actually transmitted, taught, and preserved across the documented span of Indian intellectual history.</p>
+  <blockquote class="pull">
+    Every other śāstra this series has surveyed took something other than speech as its object — the state, the body, the stage, the syllogism — and brought speech's own disciplined method to bear upon it. Mantra-śāstra is the one place the tradition turned that same disciplined method back upon speech itself, and asked what speech could become if speech learned to practise on itself.
+    <span class="attrib">Series B · Editorial Framework</span>
+  </blockquote>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <section class="context-box">
+    <h3>A Note on Sections XIII–XXII — The First Expansion Block</h3>
+    <p>The ten sections below take up, in the lakṣaṇa–prakriyā–udāharaṇa–phala method Part Eight's own expansion blocks established, the core concepts this paper's original twelve sections introduced but could not develop at full technical depth: nāda-brahman theory, sphoṭa revisited specifically for mantra, the three guṇic classes of mantra, mantra's relation to prāṇa, mantra-yoga's six limbs, the Gāyatrī, the Upaniṣadic mahāvākyas, a cautious Vajrayāna comparison, nāda-yoga's return to Part Three, and a worked case study on the Śiva-Sūtras.</p>
+  </section>
+
+  <h1 class="sectionhead" id="sec-13">XIII.</h1>
+  <h2 class="sectiontitle">Nāda-Brahman in Full: Sound as the Substance of Reality</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Nāda-brahman names the doctrine, developed most fully in the Nāda-Bindu-Upaniṣad and the later Tantric and Nāda-Yoga corpus, that sound (nāda) is not merely a vehicle for meaning or a medium of communication but is itself, in its subtlest unstruck (anāhata) form, identical with brahman, the undifferentiated ground this series has tracked since Part One under the name Parā.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>The doctrine distinguishes āhata nāda (struck sound — ordinary, externally produced and audible sound, corresponding to this paper's Vaikharī) from anāhata nāda (unstruck sound — a subtle, internally perceptible vibration the advanced practitioner is held to hear without any external striking or friction, corresponding to a register this paper places at or near Parā itself), with intermediate grades of subtlety mapped, in the more elaborate nāda-yoga manuals, onto Paśyantī and Madhyamā in turn.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Nāda-Brahman's Grades Mapped onto the Catuṣpadī</caption>
+    <tr><th>Catuṣpadī Level</th><th>Nāda-Grade</th><th>Character</th></tr>
+    <tr><td>Vaikharī</td><td>Āhata nāda</td><td>Struck, externally audible sound</td></tr>
+    <tr><td>Madhyamā</td><td>Intermediate subtle vibration</td><td>Internally articulate but not yet externally struck</td></tr>
+    <tr><td>Paśyantī</td><td>Increasingly subtle, near-undifferentiated pulsation</td><td>Intentional but pre-verbal</td></tr>
+    <tr><td>Parā</td><td>Anāhata nāda</td><td>Wholly unstruck, identical with brahman itself</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>Nāda-brahman doctrine supplies this paper's most explicit textual confirmation that the catuṣpadī architecture this paper's Section 4.2 mapped onto mantra-practice was already, within the tradition's own nāda-yoga branch, understood as a graded continuum of sound-subtlety rather than as this paper's own retrospective imposition — strengthening Section 11.1's recursive-closure claim with direct textual support. Section XXX's treatment of the Spanda-Kārikā below develops a closely related, but textually distinct, vibration-centred doctrine that this paper does not collapse into nāda-brahman without qualification.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-14">XIV.</h1>
+  <h2 class="sectiontitle">Sphoṭa Revisited: The Mantra-Syllable as a Single Indivisible Meaning-Burst</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Part Seven developed Bhartṛhari's sphoṭa doctrine — the theory that a word's meaning bursts forth (sphoṭa) as a single, indivisible cognitive unit rather than being built up additively from its sequentially uttered phonemes — as vyākaraṇa's own most philosophically ambitious contribution. This section asks how sphoṭa-theory bears specifically on bīja-mantra (Section II), whose meaning, unlike an ordinary word's, is held by the tradition to be non-arbitrary and structurally identical with its referent.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>If, as Part Seven established, even ordinary words convey meaning through an indivisible sphoṭa-burst rather than through additive phoneme-by-phoneme accumulation, a bīja-mantra's own single-syllable compactness (Section 2.1) emerges, on this paper's own synthetic reading, as sphoṭa-theory's logical limit case: a bīja is, in effect, a sphoṭa reduced to its most minimal possible phonetic vehicle, retaining the full indivisible meaning-burst Bhartṛhari's theory ascribes to any word while dispensing with everything beyond the single syllable required to occasion it.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <div class="formula-box">
+    <div class="formula-main">शब्द (बहुवर्णात्मक) → स्फोटः (एकः) ↔ बीजम् (एकवर्णात्मक) → स्फोटः (एकः)</div>
+    <div class="formula-translit">śabda (bahu-varṇātmaka) → sphoṭaḥ (ekaḥ) ↔ bījam (eka-varṇātmaka) → sphoṭaḥ (ekaḥ)</div>
+    <div class="formula-note">An ordinary multi-syllable word and a single-syllable bīja both occasion one indivisible sphoṭa-burst; the bīja achieves the same indivisible result with minimal phonetic vehicle.</div>
+  </div>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This paper does not claim Bhartṛhari himself developed sphoṭa-theory with bīja-mantra specifically in view — that connection remains this paper's own structural-synthetic proposal, flagged accordingly per Section XL's methodological commitments — but the compatibility between Part Seven's grammatical-philosophical apparatus and this paper's own mantra-technical material supplies further confirmation that vyākaraṇa and mantra-śāstra, though institutionally distinct disciplines, share deep theoretical commitments about how sound carries meaning.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-15">XV.</h1>
+  <h2 class="sectiontitle">The Three Guṇic Classes of Mantra</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Tantric mantra-classification literature sorts mantras into sāttvika, rājasika, and tāmasika classes by their characteristic effect on the practitioner's own citta — a classification this paper recognises as a direct application of Part Six's own triguṇa-typology to mantra-practice specifically.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Sāttvika mantras (typically associated with benevolent, illuminating deity-aspects) are held to cultivate clarity and equanimity; rājasika mantras (associated with worldly attainment, prosperity, or attraction) are held to cultivate active, outward-directed engagement; tāmasika mantras (associated with fierce or protective deity-aspects, used in specifically defensive or corrective ritual contexts) are held to cultivate forceful, boundary-asserting states — a tripartite functional division this paper reads as identical in logic to Part Six's own triguṇa-citta-typology, now applied not to the practitioner's existing disposition but to the disposition a given mantra is held to cultivate.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <div class="theory-compare">
+    <div class="theory-card"><div class="tc-name">Sāttvika Mantra</div><div class="tc-school">Clarity-Cultivating</div><p>Associated with benevolent, illuminating deity-aspects; cultivates equanimity.</p></div>
+    <div class="theory-card"><div class="tc-name">Rājasika Mantra</div><div class="tc-school">Attainment-Cultivating</div><p>Associated with prosperity or attraction; cultivates active engagement.</p></div>
+    <div class="theory-card"><div class="tc-name">Tāmasika Mantra</div><div class="tc-school">Boundary-Asserting</div><p>Associated with fierce, protective deity-aspects; used defensively.</p></div>
+  </div>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>That mantra-classification literature reaches independently for the identical triguṇa-vocabulary Part Six developed for citta-typology and Part Eight Section 4.3 found again in tridoṣa-diagnostics supplies a third independent confirmation that triguṇa-classification is a properly general diagnostic tool within this tradition, recurring wherever the tradition classifies graded states of any kind — body, citta, or, now, sound itself.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-16">XVI.</h1>
+  <h2 class="sectiontitle">Mantra and Prāṇa: The Breath-Bound Syllable</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Classical mantra-practice does not treat recitation as independent of breath: most japa-disciplines (Section V) specify a fixed coordination between mantra-repetition and prāṇāyāma (the breath-regulation discipline Part Six's own aṣṭāṅga-ladder placed as the fourth limb of yogic practice), a coordination this section examines directly.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>So-ham japa (also ajapā-japa, "unrepeated repetition") names the practice of synchronising a mantra's two syllables with the natural rhythm of inhalation and exhalation themselves, such that the breath's own ceaseless movement becomes, without active effort, a continuous japa requiring no separate counted repetition — a practice the tradition holds to be the most advanced and least effortful of all japa-modes, surpassing even mānasa-japa's own silent but still effortful internal repetition.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Breath-Synchronised Japa</caption>
+    <tr><th>Breath-Phase</th><th>Associated Syllable</th><th>Character</th></tr>
+    <tr><td>Exhalation</td><td>"Sa"</td><td>Outward-moving, identified with the universal</td></tr>
+    <tr><td>Inhalation</td><td>"Ham"</td><td>Inward-moving, identified with the individual self</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>Ajapā-japa's collapse of mantra-recitation into the breath's own involuntary rhythm supplies this paper's clearest documented instance of japa's culminating aim (Section 5.2's saṃskāra-logic taken to its limit): a practice so thoroughly internalised through repetition that it ceases to require active repetition at all, becoming instead the practitioner's own continuous physiological condition — an end-state this paper reads as structurally parallel to Part Six's own account of samādhi as effortless, sustained absorption following sufficiently disciplined prior practice. Section XXVIII's own kuṇḍalinī material develops prāṇa's further role in driving the breath's own ascent through the body's six cakras.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-17">XVII.</h1>
+  <h2 class="sectiontitle">The Six Limbs of Mantra-Yoga</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Later Haṭha and Tantric synthesis literature (most systematically the Gheraṇḍa-Saṃhitā) names mantra-yoga as a distinct yogic path alongside haṭha-yoga, laya-yoga, and rāja-yoga, organised, in at least one influential schema, around six limbs (ṣaḍaṅga) this section sets directly alongside Part Six's own eight-limbed (aṣṭāṅga) Pātañjala schema.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>The six limbs — typically enumerated as āsana, prāṇāyāma, mudrā, dhyāna, tarpaṇa (libation/offering), and havana (fire-offering), with the central mantra-japa itself sometimes counted as an implicit seventh organising thread running through all six — overlap substantially with Part Six's own aṣṭāṅga-ladder while reorganising its component limbs around mantra-recitation as the practice's own central, integrating activity rather than treating samādhi as the independent culminating limb Part Six's own Pātañjala schema names.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Mantra-Yoga's Six Limbs Set Against Pātañjala's Eight</caption>
+    <tr><th>Mantra-Yoga Limb</th><th>Nearest Pātañjala Equivalent (Part Six)</th></tr>
+    <tr><td>Āsana</td><td>Āsana (3rd limb)</td></tr>
+    <tr><td>Prāṇāyāma</td><td>Prāṇāyāma (4th limb)</td></tr>
+    <tr><td>Mudrā</td><td>No direct equivalent; closest to combined āsana/bandha practice</td></tr>
+    <tr><td>Dhyāna</td><td>Dhyāna (7th limb)</td></tr>
+    <tr><td>Tarpaṇa</td><td>No direct equivalent; ritual rather than meditative</td></tr>
+    <tr><td>Havana</td><td>No direct equivalent; ritual rather than meditative</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>Mantra-yoga's schema, this paper concludes, is best understood not as a rival to Part Six's own aṣṭāṅga-ladder but as that same ladder's component limbs reorganised around mantra-japa as the integrating centre, with two genuinely additional ritual limbs (tarpaṇa, havana) reflecting mantra-yoga's own closer institutional proximity to Tantric ritual practice than Pātañjala's more strictly meditative aṣṭāṅga-schema requires. Section XXXIV's puraścaraṇa material below specifies the precise proportional weighting of tarpaṇa and havana relative to japa itself.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-18">XVIII.</h1>
+  <h2 class="sectiontitle">The Gāyatrī as Paradigm Mantra</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>The Gāyatrī mantra (Ṛg Veda III.62.10), addressed to Savitṛ and composed in the gāyatrī metre (twenty-four syllables across three octosyllabic pādas), is examined here as this paper's paradigm case of a mantra whose śrauta credentials (Part Eight Section XXI's first sense) and later Tantric/devotional elaboration (Part Eight Section XXI's third sense) are both fully and continuously documented across the entire span of this series' own historical coverage.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>The Gāyatrī's three-pāda structure (a sequence — invocation, a stated aspiration, a culminating petition for the illumination of the practitioner's own buddhi) supplies, this paper argues, a documented bridge-case between vyākaraṇa's own metrical analysis (Part Seven) and mantra-śāstra's own kūṭa-analysis (Section 10.2): the same three-part decomposition Section 10.2 found in the Tantric Pañcadaśī's kūṭa-structure is independently present in the much older Vedic Gāyatrī's own three-pāda structure.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>The Gāyatrī's Three Pādas</caption>
+    <tr><th>Pāda</th><th>Function</th></tr>
+    <tr><td>1</td><td>Invocation of Savitṛ's own radiant, sustaining aspect</td></tr>
+    <tr><td>2</td><td>Meditation upon that radiance (dhīmahi)</td></tr>
+    <tr><td>3</td><td>Petition that the deity stimulate the practitioner's own buddhi (dhiyo yo naḥ pracodayāt)</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>The Gāyatrī's own petition for illumination of buddhi, the same faculty Part Six's citta-architecture placed as the discriminative apex of manas-buddhi-ahaṃkāra, supplies this paper's clearest single textual instance of mantra-recitation explicitly, in its own words, requesting the very discriminative capacity this entire series has traced from Part One onward — making the Gāyatrī, on this paper's own reading, the single most directly self-referential mantra in the documented corpus with respect to this series' own organising theme.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-19">XIX.</h1>
+  <h2 class="sectiontitle">The Mahāvākyas as Mantra-Adjacent Utterances</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>The Upaniṣadic mahāvākyas ("great sayings" — tat tvam asi, ahaṃ brahmāsmi, prajñānaṃ brahma, ayam ātmā brahma, one drawn from each of the four Vedas in the standard Advaita enumeration) occupy, this section argues, a position adjacent to but technically distinct from the bīja and longer Tantric mantras Sections II and X have examined.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Unlike a bīja-mantra, whose efficacy the tradition holds to operate independently of, or even prior to, the practitioner's own conceptual comprehension of its meaning (Section 1.1's śrauta sense), a mahāvākya's own efficacy, on the Advaita tradition's own account, depends specifically on the practitioner's direct, comprehended realisation of its semantic content — the mahāvākya does not merely produce an effect through repeated recitation but is held to directly point toward, and under the right conditions occasion, the very non-dual recognition Section 9.2's Pratyabhijñā material independently described from a different doctrinal direction.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Bīja-Mantra and Mahāvākya Compared</caption>
+    <tr><th>Dimension</th><th>Bīja-Mantra (Section II)</th><th>Mahāvākya</th></tr>
+    <tr><td>Efficacy depends on comprehension?</td><td>No — phonetic correctness held sufficient</td><td>Yes — direct comprehended realisation required</td></tr>
+    <tr><td>Requires dīkṣā?</td><td>Yes, strictly</td><td>Typically transmitted through guru-mediated Upaniṣadic study (śravaṇa-manana-nididhyāsana) rather than formal dīkṣā specifically</td></tr>
+    <tr><td>Repetition-based practice?</td><td>Yes — japa central</td><td>Contemplative reflection (manana, nididhyāsana) rather than counted repetition is the primary discipline</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>The mahāvākya's distinct, comprehension-dependent mode of operation supplies this paper with a needed qualification to its own broader efficacy-through-restricted-transmission claim (Section 1.1): restricted transmission remains common to both bīja-mantra and mahāvākya alike, but the further requirement of semantic comprehension is, this paper concludes, specific to the mahāvākya and to Vedāntic practice generally, marking a genuine internal differentiation within the broader mantra-adjacent category this paper's own Section XL methodological appendix registers as a limit on the otherwise unified efficacy-claim this paper has developed.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-20">XX.</h1>
+  <h2 class="sectiontitle">Mantra in Buddhist Vajrayāna, with Methodological Caution</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Vajrayāna Buddhism's own extensive mantra-corpus (most familiarly the six-syllable oṃ maṇi padme hūṃ, associated with Avalokiteśvara) developed in sustained historical contact and exchange with the Hindu Tantric mantra-tradition this paper has surveyed in Sections I–XIX; this section examines that relationship with the same caution Part Eight Sections XXXV and XXXVI applied to Machiavelli and Galen respectively.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Vajrayāna mantra-practice shares with the Hindu material this paper has surveyed a comparable emphasis on dīkṣā-style initiatory transmission (Tibetan: wang), a comparable bīja-syllable vocabulary (oṃ, hrīḥ, and others appear, often with overlapping or directly borrowed phonetic form, across both corpora), and a comparable mantra-yantra-deity integration (the Vajrayāna maṇḍala bears a documented structural resemblance to the Śrī-Cakra material Part Eight Section XXXIV and this paper's own Section 10.3 have examined). The traditions diverge, however, in their underlying metaphysics: Vajrayāna mantra-practice operates within a Buddhist framework explicitly rejecting the ātman/brahman ontology Section 9.2's Pratyabhijñā material and Section XIX's mahāvākya material both presuppose, directing its own practice instead toward the realisation of śūnyatā (emptiness) and buddha-nature — a divergence this paper, consistent with its own Section XL commitments, does not collapse for the sake of a tidier comparison.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Hindu Tantric Mantra and Vajrayāna Mantra: Convergence and Divergence</caption>
+    <tr><th>Dimension</th><th>Hindu Tantric (Sections I–XIX)</th><th>Vajrayāna</th></tr>
+    <tr><td>Dīkṣā/initiatory transmission required</td><td>Yes</td><td>Yes (wang)</td></tr>
+    <tr><td>Bīja-syllable vocabulary</td><td>Oṃ, hrīṃ, krīṃ, śrīṃ, and others</td><td>Overlapping vocabulary, including oṃ and hrīḥ</td></tr>
+    <tr><td>Maṇḍala/yantra integration</td><td>Yes (Śrī-Cakra, Sections X, Part Eight XXXIV)</td><td>Yes, with documented structural resemblance</td></tr>
+    <tr><td>Underlying metaphysics</td><td>Ātman/brahman non-dualism (predominant strand)</td><td>Śūnyatā/buddha-nature; explicitly non-ātman</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This paper treats the documented historical contact and partial vocabulary-overlap between Hindu Tantric and Vajrayāna mantra-practice as evidence of a shared regional sound-technology this paper's preceding nineteen sections have surveyed primarily from its Hindu textual lineage, while explicitly declining to extend that paper's own non-dual metaphysical claims (Section 9.2, Section XIX) onto a tradition whose own metaphysics is explicitly and self-consciously different — a further instance of this series' recurring commitment to structural-resonance comparison without overclaiming doctrinal identity.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-21">XXI.</h1>
+  <h2 class="sectiontitle">Nāda-Yoga and the Return to Part Three's Sāma Material</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Part Three examined the Sāma Veda's own musical elaboration of Ṛg-Vedic text as this series' founding account of feeling-toned (affective) cognition arising from sound. This section asks how nāda-yoga's own subtle-sound doctrine (Section XIII) relates to that earlier material, a connection this paper's first twenty sections have not yet drawn explicitly.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Both Sāma-chant and nāda-yoga practice treat sound's own musical, non-semantic qualities — pitch-contour, sustain, the chant's own melodic elaboration of an otherwise fixed Ṛg-Vedic text — as independently significant rather than as a merely decorative addition to verbal meaning; this paper reads nāda-yoga's anāhata-doctrine (Section XIII.II) as a later, explicitly systematised elaboration of an insight Part Three already located, in less systematic form, in the Sāma tradition's own ancient musical practice.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Sāma Chant and Nāda-Yoga: A Shared Insight, Two Historical Moments</caption>
+    <tr><th>Dimension</th><th>Sāma Chant (Part Three)</th><th>Nāda-Yoga (Section XIII)</th></tr>
+    <tr><td>Treats musical quality as independently significant</td><td>Yes — melodic elaboration of fixed text</td><td>Yes — graded subtlety of sound itself</td></tr>
+    <tr><td>Systematic theoretical apparatus</td><td>Comparatively undeveloped in the earliest layer</td><td>Fully systematised (āhata/anāhata grading)</td></tr>
+    <tr><td>Historical position</td><td>Among the earliest Vedic strata</td><td>Considerably later, Upaniṣadic and Tantric strata</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This paper reads nāda-yoga as supplying the explicit theoretical apparatus Part Three's own Sāma material anticipated but did not yet possess — a further instance of this series' own recurring developmental pattern, in which an early, intuitively-grasped insight (Sāma's own musical sensibility) receives, centuries later, the kind of systematic theoretical elaboration this series has traced across vyākaraṇa, nyāya, arthaśāstra, and āyurveda alike, now confirmed once more specifically for sound's own musical dimension.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-22">XXII.</h1>
+  <h2 class="sectiontitle">Case Study: The Fourteen Śiva-Sūtras as the Mātṛkā's Own Generative Grammar</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>The Māheśvara-Sūtras (also called the Śiva-Sūtras of Pāṇini, fourteen brief sūtras prefixed to the Aṣṭādhyāyī itself and traditionally held to have been revealed to Pāṇini by Śiva's own damaru-drum) arrange the Sanskrit phoneme-inventory into fourteen groups specifically organised to support vyākaraṇa's own grammatical operations (Part Seven) — a text this paper examines here as a direct, documented bridge between Part Seven's grammatical material and this paper's own mātṛkā material (Section III).</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>The fourteen sūtras' own traditional attribution to Śiva's drum-beats, and their structural role as the technical foundation underlying Pāṇini's entire pratyāhāra-system (the abbreviatory device by which vyākaraṇa names a class of phonemes through a start-point and an end-marker, Part Seven), positions the same fifty-one-phoneme inventory mantra-śāstra treats as mātṛkā (Section III) as, simultaneously and from the very same traditional source, the technical substrate of Pāṇini's own grammatical system — a single inventory serving, this paper argues, as the shared foundation of vyākaraṇa and mantra-śāstra alike.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <div class="reading-note"><b>One Inventory, Two Disciplines, One Traditional Origin-Story</b> — The tradition's own account credits Śiva's drum with revealing, in a single act, both the phoneme-groupings Pāṇini's grammar requires and, on the mantra-tradition's own parallel reading, the same phonemes' mantric, deity-correlated character (Section III) — a textually documented point of convergence this paper treats as stronger evidence for vyākaraṇa-mantra continuity than the more speculative sphoṭa-bīja connection Section XIV proposed.</div>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>The Śiva-Sūtras' documented dual service — grammatical substrate for Pāṇini, mantric substrate for the Tantric mātṛkā-tradition — supplies this paper's strongest single case that vyākaraṇa (Part Seven) and mantra-śāstra (this paper) are not merely structurally analogous disciplines but share, at the level of their most basic shared technical resource (the fifty-one-phoneme inventory itself), a single, traditionally unified point of origin. Section XXVII below builds directly on this foundation to work through that inventory's own internal structure in full detail.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <section class="context-box">
+    <h3>A Note on Sections XXIII–XXVI — The Second Expansion Block</h3>
+    <p>These four sections take up mantra's therapeutic application, its place within vāstu and yantra (extending Part Eight's own architectural material), regional schools, and a consolidated synthesis table extending Part Eight's own fifteen-domain table by the recursive domain this paper itself supplies.</p>
+  </section>
+
+  <h1 class="sectionhead" id="sec-23">XXIII.</h1>
+  <h2 class="sectiontitle">Mantra-Cikitsā: The Therapeutic Mantra</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Mantra-cikitsā ("mantra-treatment") names the application of specific mantras to specific therapeutic ends within classical and folk Āyurvedic practice, a documented contact-zone between this paper's own mantra-material and Part Eight's tridoṣa-medicine this paper has not yet examined directly.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Classical sources place mantra-cikitsā specifically within bhūta-vidyā (Part Eight Section 2.2's sixth aṅga of classical medicine, covering conditions classically attributed to possession), prescribing particular mantras alongside, rather than instead of, the pharmacological and dietary intervention Part Eight Section 4.2 developed for ordinary tridoṣa-imbalance — a documented combination-therapy approach this paper reads as a further instance of Part Eight Section 6.1's own observation that classical Āyurveda maintained two only loosely integrated tracks (doṣaja and āgantu/bhūta-attributed) for psychological and certain other disturbance.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Mantra-Cikitsā's Place Within the Eight Aṅgas (Part Eight Sec. 2.2)</caption>
+    <tr><th>Aṅga</th><th>Primary Method</th><th>Mantra's Documented Role</th></tr>
+    <tr><td>Kāya-Cikitsā</td><td>Diet, lifestyle, pharmacology</td><td>Secondary/adjunct in some regional traditions</td></tr>
+    <tr><td>Bhūta-Vidyā</td><td>Possession-attributed condition management</td><td>Primary documented role for mantra-cikitsā specifically</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>Mantra-cikitsā's documented concentration specifically within bhūta-vidyā, rather than across all eight aṅgas equally, confirms this paper's own reading of mantra as a recursive, sound-specific technology (Section 11.1) rather than a generically applicable medical intervention — its therapeutic use is bounded by the same restricted-domain logic (Section 1.1) this paper has traced through mantra-practice generally, here extended into Part Eight's own medical material as a further, source-independent confirmation.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-24">XXIV.</h1>
+  <h2 class="sectiontitle">Mantra in Vāstu and the Yantra Revisited</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Part Eight Sections XXV, XXXIII, and XXXIV developed the vāstu-puruṣa-maṇḍala, the vāstu-praveśa consecration sequence, and the Śrī-Cakra yantra respectively, each independently; this section draws the three together specifically around the mantra-recitation each ritual sequence is documented to require.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>The vāstu-praveśa's own three-stage sequence (Part Eight Section XXXIII.III: bhūmi-pūjā, aṅkura-arpaṇa, praveśa-homa) is documented, in the Śilpa-Śāstra corpus's own prescriptive chapters, to require specific mantra-recitation at each of its three stages, just as the Śrī-Cakra's own ritual use (Section 10.3) requires the Pañcadaśī's own recitation in coordination with the yantra's own visual focus — confirming, this paper argues, that mantra is not one further item in Part Eight's own fifteen-domain table (Part Eight Section XLI) standing alongside vāstu and yantra as a separate entry, but is rather the activating discipline without which the architectural and geometric instantiations those other entries describe remain, on the tradition's own account, inert.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Mantra as the Activating Layer Across Three Architectural/Geometric Domains</caption>
+    <tr><th>Domain</th><th>Static Structure (Part Eight)</th><th>Activating Mantra-Discipline (This Paper)</th></tr>
+    <tr><td>Vāstu-Puruṣa-Maṇḍala</td><td>Grid-assignment of deities to padas (Sec. XXV)</td><td>Praveśa-homa recitation (Sec. XXXIII)</td></tr>
+    <tr><td>Vāstu-Praveśa</td><td>Three-stage consecration sequence (Sec. XXXIII)</td><td>Stage-specific mantra at each of the three stages</td></tr>
+    <tr><td>Śrī-Cakra</td><td>Nine-āvaraṇa geometric yantra (Sec. XXXIV)</td><td>Pañcadaśī recitation (this paper, Sec. X)</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This paper's own retrospective re-reading of Part Eight's architectural-geometric material confirms that mantra-recitation functions, across all three domains examined, as the activating discipline a static structure requires before the homology those structures instantiate (Part Eight Section VII) is held to become operative — a relationship this paper's own Section XXVI synthesis table registers as mantra's distinctive recursive position relative to Part Eight's fifteen-domain table rather than as a fifteenth-plus-one merely additional entry.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-25">XXV.</h1>
+  <h2 class="sectiontitle">Regional Mantra-Schools</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Mantra-transmission, like the regional Āyurvedic schools Part Eight Section XXVIII examined, was not historically uniform across the subcontinent; this section surveys, briefly, three documented regional concentrations of mantra-lineage transmission.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Kashmir Śaivism's own Pratyabhijñā-affiliated lineages (Section IX) concentrated historically in the Kashmir valley; Śrī-Vidyā's own Pañcadaśī-centred lineages (Section X) developed particularly strong institutional continuity in Tamil Nadu and Andhra, surviving into the present principally through maṭha-affiliated transmission; and Bengal's own Śākta-Tantric lineages developed a distinct emphasis on the fierce, tāmasika-classified mantras (Section XV) associated with Kālī and related deity-aspects.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Three Regional Mantra-Lineage Concentrations</caption>
+    <tr><th>Region</th><th>Characteristic Lineage</th><th>Characteristic Emphasis</th></tr>
+    <tr><td>Kashmir</td><td>Pratyabhijñā-affiliated Śaiva lineages</td><td>Non-dual recognition-theory (Sec. IX)</td></tr>
+    <tr><td>Tamil Nadu / Andhra</td><td>Śrī-Vidyā maṭha-lineages</td><td>Pañcadaśī/Ṣoḍaśī practice (Sec. X)</td></tr>
+    <tr><td>Bengal</td><td>Śākta-Tantric lineages</td><td>Tāmasika-classified Kālī-mantras (Sec. XV)</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This regional survey, like Part Eight Section XXVIII's own Kerala-versus-pan-Indian comparison, confirms once more this series' recurring finding that a documented, textually unified discipline (mantra-śāstra, no less than Āyurveda) was in continuous historical practice adapted to distinct regional institutional contexts without thereby losing the underlying technical unity Sections I–XXII have traced. Section XXIX below examines a further, non-regional but equally consequential internal divergence within the Śrī-Vidyā lineage specifically: the Samaya/Kaula distinction.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-26">XXVI.</h1>
+  <h2 class="sectiontitle">Synthesis: The Twelve-Term Recursive Homology</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>This section extends Part Eight's own fifteen-domain table (Part Eight Section XLI) by registering mantra-śāstra's own distinctively recursive relationship to that table's other fourteen domains, rather than appending mantra as a simple fifteenth-plus-one entry.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Where Part Eight's own fifteen domains each instantiate the proportional-decomposition method in a domain external to Vāk (the state, the body, the horoscope, the temple), this paper's own twelve foundational sections and first two expansion blocks have shown that mantra-śāstra instantiates the identical method internally, upon Vāk's own four-level structure — a difference in kind this section's table makes explicit by marking mantra's own entry as recursive rather than additive.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Mantra's Recursive Position Relative to Part Eight's Fifteen Domains</caption>
+    <tr><th>Domain-Type</th><th>Representative Domains (Part Eight)</th><th>Object of Decomposition</th></tr>
+    <tr><td>Additive (external object)</td><td>Rājya, śarīra, jyotiṣa, built form, etc. (14 domains)</td><td>Polity, body, horoscope, temple — each external to Vāk itself</td></tr>
+    <tr><td>Recursive (Vāk's own structure)</td><td>Mantra-śāstra (this paper)</td><td>Vāk's own catuṣpadī architecture (Section 4.2), turned back upon itself as technique</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This paper's own twelve-vs-fifteen-domain distinction is offered as this paper's central structural-synthetic contribution: not a claim that mantra-śāstra is somehow a "sixteenth" domain alongside Part Eight's fifteen, but a claim that mantra-śāstra occupies a structurally different position relative to the whole series — the position of method-turned-upon-its-own-origin — that the additive language of Part Eight's own table cannot, on its own terms, adequately register. Sections XXVII through XXXVI below carry this recursive claim to its fullest technical depth.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <section class="context-box">
+    <h3>A Note on Sections XXVII–XXXVI — The Third Expansion Block, New to This Revised Edition</h3>
+    <p>The ten sections below are new to this revised and expanded edition and carry this paper's technical apparatus to a depth the original twelve sections and first two expansion blocks could only gesture toward: the mātṛkā's full phoneme-by-phoneme correspondence to cakra and body; the kuṇḍalinī doctrine's own six-cakra vertical mantra-architecture; the Samaya/Kaula divergence internal to Śrī-Vidyā; Vasugupta's Spanda-Kārikā; Abhinavagupta's Tantrāloka and its theory of mantra-vīrya; the thirty-six-tattva cosmology's placement of mantra within a graded ontology; a deepened phoneme-level analysis of the Pañcadaśī's three kūṭas; the puraścaraṇa procedural manual; Mīmāṃsā's apūrva-doctrine set against mantra's own causal mechanism; and a capstone case study on the Lalitā-Sahasranāma integrating nearly every thread this paper develops.</p>
+  </section>
+
+  <h1 class="sectionhead" id="sec-27">XXVII.</h1>
+  <h2 class="sectiontitle">The Mātṛkā in Full Phoneme Correspondence: Cakra, Body, and Petal</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Section III introduced the mātṛkā at the conceptual level, as a closed, generative, deity-correlated phoneme-set distinct from vyākaraṇa's own grammatical treatment of the identical inventory. This section works through that inventory's own internal structure in the technical detail Section III's introductory treatment deferred: the documented assignment, in the kuṇḍalinī-yoga corpus (most systematically the sixteenth-century Ṣaṭ-Cakra-Nirūpaṇa of Pūrṇānanda), of the mātṛkā's fifty phonemes across the petals of the body's own six principal cakras (Section XXVIII develops the cakras themselves; this section's own focus is specifically the phoneme-to-petal assignment).</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>The Ṣaṭ-Cakra-Nirūpaṇa's own documented scheme distributes the fifty mātṛkā-phonemes (in this text's own enumeration, excluding certain duplicated or alternate forms counted separately in other lists) across the petals of five of the six cakras, with the sixth (ājñā) assigned only two petals and a correspondingly reduced two-phoneme assignment, and the crown (sahasrāra) — not strictly one of the six cakras proper but their culminating point — assigned, in the most elaborate versions of the scheme, the entire fifty-phoneme set repeated twenty times across its own thousand petals, from which the cakra's own name (sahasra, "thousand") derives.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Mātṛkā-Phoneme Distribution Across the Six Cakras (Ṣaṭ-Cakra-Nirūpaṇa Scheme)</caption>
+    <tr><th>Cakra</th><th>Petal Count</th><th>Phoneme-Group Assigned</th></tr>
+    <tr><td>Mūlādhāra</td><td>4</td><td>Va, Śa, Ṣa, Sa</td></tr>
+    <tr><td>Svādhiṣṭhāna</td><td>6</td><td>Ba, Bha, Ma, Ya, Ra, La</td></tr>
+    <tr><td>Maṇipūra</td><td>10</td><td>Ḍa through Pha (ten-phoneme group)</td></tr>
+    <tr><td>Anāhata</td><td>12</td><td>Ka through Ṭha (twelve-phoneme group)</td></tr>
+    <tr><td>Viśuddha</td><td>16</td><td>The full sixteen-vowel series, A through Visarga</td></tr>
+    <tr><td>Ājñā</td><td>2</td><td>Ha, Kṣa</td></tr>
+    <tr><td>Sahasrāra</td><td>1000 (50 × 20)</td><td>The entire fifty-phoneme mātṛkā, repeated twentyfold</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This full phoneme-by-petal correspondence supplies the high-resolution technical substrate Section 6.5 anticipated for mātṛkā-nyāsa: where Section VI's ṣaḍaṅga-nyāsa places six syllable-groups at six bodily points, this section's documented scheme shows the tradition's own further, considerably more granular ambition — to place every single phoneme of the closed mātṛkā inventory at its own precise point along the body's own vertical axis, confirming this paper's recurring finding (Section 6.2) that the body itself is treated, across the mantra-tradition's full technical range, as a consecrated grid at every level of resolution the tradition's own texts undertake to specify.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-28">XXVIII.</h1>
+  <h2 class="sectiontitle">Kuṇḍalinī and the Six Cakras: Mantra's Vertical Architecture</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Kuṇḍalinī names the latent, coiled energy classical Tantric physiology locates at the base of the spine (mūlādhāra), held to ascend, when activated through disciplined practice, through a vertical sequence of six cakras (subtle energy-centres) before reaching the crown (sahasrāra) — a doctrine this section examines specifically for its own distinctive bīja-mantra assignment to each cakra, building directly on Section XXVII's phoneme-correspondence material.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Each of the six cakras is assigned, in addition to its own petal-phoneme set (Section XXVII), a single presiding bīja-mantra held to govern that cakra's own characteristic element (bhūta) and function, recited specifically during the cakra-focused stage of an ascending meditative practice — a vertical sequence this paper reads as a further, spatially extended instance of the outward-to-inward (here, downward-to-upward) progression this paper's Section 10.3 already found in the Śrī-Cakra's nine āvaraṇas.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>The Six Cakras, Their Presiding Bīja, and Governing Element</caption>
+    <tr><th>Cakra</th><th>Location</th><th>Presiding Bīja</th><th>Element (Bhūta)</th></tr>
+    <tr><td>Mūlādhāra</td><td>Base of spine</td><td>Laṃ</td><td>Earth (pṛthivī)</td></tr>
+    <tr><td>Svādhiṣṭhāna</td><td>Lower abdomen</td><td>Vaṃ</td><td>Water (ap)</td></tr>
+    <tr><td>Maṇipūra</td><td>Navel</td><td>Raṃ</td><td>Fire (tejas)</td></tr>
+    <tr><td>Anāhata</td><td>Heart</td><td>Yaṃ</td><td>Air (vāyu)</td></tr>
+    <tr><td>Viśuddha</td><td>Throat</td><td>Haṃ</td><td>Space/ether (ākāśa)</td></tr>
+    <tr><td>Ājñā</td><td>Brow</td><td>Oṃ</td><td>Beyond the five elements; the mind itself (manas)</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This six-cakra, six-bīja, five-element-plus-manas scheme supplies a further documented instance of componential decomposition (Part Eight's own recurring method) applied vertically along the body's own axis, and confirms, alongside Section XXVII's phoneme-distribution material, that kuṇḍalinī-yoga treats mantra not merely as an auditory or cognitive practice but as a practice with an explicit, textually specified spatial-physiological architecture — the clearest possible documented instance of Section 6.2's nyāsa-as-body-consecration logic extended into a full ascending sequence rather than a single static placement.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-29">XXIX.</h1>
+  <h2 class="sectiontitle">Samaya and Kaula: Two Approaches Within Śrī-Vidyā</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Section X and Section XXV both referred to Śrī-Vidyā as though it named a single unified lineage; this section corrects that simplification by examining a documented, historically consequential internal divergence between two interpretive approaches to the very same Pañcadaśī mantra and Śrī-Cakra yantra: Samaya-ācāra and Kaula-ācāra.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Samaya-ācāra (the "conventional" or internalised approach, historically associated with the Śaṅkarācārya-affiliated maṭhas and with commentators such as Bhāskararāya in his more conservative register) holds that the Śrī-Cakra's worship and the Pañcadaśī's recitation should proceed entirely through internal visualisation and symbolic substitution, without external ritual substances regarded as transgressive by orthodox Brahmanical norms. Kaula-ācāra, by contrast, retains a documented historical practice of external ritual worship including the pañcamakāra (the "five m's" — substances whose ordinary consumption or use orthodox Brahmanical dharma restricts), understood within Kaula practice itself as a deliberate ritual transcendence of ordinary purity-impurity distinctions in pursuit of the same non-dual recognition Section 9.2's Pratyabhijñā material describes.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Samaya-Ācāra and Kaula-Ācāra Compared</caption>
+    <tr><th>Dimension</th><th>Samaya-Ācāra</th><th>Kaula-Ācāra</th></tr>
+    <tr><td>Mode of Śrī-Cakra worship</td><td>Internal visualisation, symbolic substitution</td><td>External ritual, including substances orthodox norms restrict</td></tr>
+    <tr><td>Relationship to Brahmanical purity-norms</td><td>Maintained throughout practice</td><td>Deliberately transcended within ritual context</td></tr>
+    <tr><td>Institutional association</td><td>Śaṅkarācārya-affiliated maṭhas; conservative commentators (Bhāskararāya's more cautious register)</td><td>Distinct Kaula lineages, historically more esoteric and less institutionally centralised</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This documented internal divergence within a single mantra-lineage directly parallels Part Eight Section XXVII's own account of Kāmandaki's divergence from Kauṭilya on saptāṅga's internal ranking: in both cases, this paper finds, a shared underlying technical apparatus (the Pañcadaśī and Śrī-Cakra here; the seven aṅgas there) supports genuinely divergent practical interpretations without thereby losing its own underlying structural unity — confirming once more this series' recurring finding that disciplined technical systems within this tradition function as frameworks for weighing competing applications rather than as single determinate prescriptions.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-30">XXX.</h1>
+  <h2 class="sectiontitle">The Spanda-Kārikā: Mantra as Vibration</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Vasugupta's Spanda-Kārikā (circa ninth century CE), a foundational text of the Spanda branch of Kashmir Śaivism closely allied with the Pratyabhijñā school Section IX examined, develops the concept of spanda — a subtle, creative "vibration" or "throb" held to be consciousness's own innermost activity, prior to and underlying any specific cognition or perception, including the recitation of a mantra.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Where Section XIII's nāda-brahman doctrine describes sound's own graded subtlety from struck to unstruck, spanda-doctrine describes something this paper reads as logically prior even to unstruck sound: not sound at all, strictly speaking, but the originary pulsation of consciousness itself out of which both sound and silence, both speech and the absence of speech, are held to arise as differentiated modes. The Spanda-Kārikā's own analysis locates a trace of this originary spanda in even the most ordinary mental fluctuation, holding that disciplined attention to that trace — and mantra-japa is named explicitly among the disciplines capable of cultivating such attention — can lead the practitioner back to spanda's own undifferentiated source.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Nāda-Brahman and Spanda Compared</caption>
+    <tr><th>Dimension</th><th>Nāda-Brahman (Section XIII)</th><th>Spanda (This Section)</th></tr>
+    <tr><td>Primary category</td><td>Sound (nāda), in graded subtlety</td><td>Vibration/pulsation of consciousness itself, prior to the sound/silence distinction</td></tr>
+    <tr><td>Relationship to Parā</td><td>Anāhata nāda is identical with Parā/brahman</td><td>Spanda is consciousness's own activity at the Parā level, logically prior to any sound-grade</td></tr>
+    <tr><td>Textual home</td><td>Nāda-Bindu-Upaniṣad and the broader nāda-yoga corpus</td><td>Vasugupta's Spanda-Kārikā and the Spanda school specifically</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This paper treats spanda-doctrine not as identical with nāda-brahman doctrine but as a textually distinct, more metaphysically fundamental account occupying a position this paper places logically prior even to Parā's own designation as "undifferentiated sound" — spanda is, on this reading, what makes Parā itself dynamic rather than static, a refinement this paper did not yet have available when Part One first established the catuṣpadī architecture, and which this paper now reads back into that architecture as a further, more technical layer available to readers prepared to pursue the Kashmir Śaiva sources in their own right.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-31">XXXI.</h1>
+  <h2 class="sectiontitle">Tantrāloka's Mantra-Vīrya: Distinguishing the Awakened from the Merely Repeated Mantra</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Abhinavagupta's Tantrāloka, the most comprehensive systematic treatise of the non-dual Kashmir Śaiva tradition this paper's Sections IX and XXX have already drawn upon, develops a theory of mantra-vīrya ("mantra-potency" or "mantra-virility") distinguishing a mantra that is merely mechanically repeated from a mantra that has become, through the practitioner's own realised insight, genuinely "awakened" (a state the text associates with mantra-caitanya, "mantra-consciousness," already anticipated in this paper's own Section 7.4).</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>The Tantrāloka's own analysis holds that a mantra repeated without the practitioner's own corresponding inner recognition (Section 9.2's pratyabhijñā) remains, however many times recited and however phonetically correct, in a condition the text characterises as comparable to a sleeping or unconscious state — present, structurally complete, but not yet "awake" in the sense the practice aims at; only when repetition (Section V's japa) is conjoined with the practitioner's own deepening recognition does the mantra, on this account, become vīrya-sampanna, "endowed with potency."</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Three Grades of Mantra-Condition per the Tantrāloka's Own Analysis</caption>
+    <tr><th>Condition</th><th>Sanskrit</th><th>Character</th></tr>
+    <tr><td>"Sleeping"</td><td>Suptavat</td><td>Phonetically correct, properly transmitted, but repeated without corresponding inner recognition</td></tr>
+    <tr><td>"Awakening"</td><td>Prabuddha-prāya</td><td>Recognition beginning to accompany repetition; siddhi (Section VII) developing</td></tr>
+    <tr><td>"Fully Awake," Potency-Endowed</td><td>Vīrya-sampanna</td><td>Recitation fully conjoined with recognition; the mantra's full claimed efficacy operative</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This three-grade analysis resolves the question Section 7.4 deferred: mantra-siddhi (the practitioner's own accomplishment, Section VII) and mantra-caitanya/vīrya (the mantra's own awakened condition) are, on the Tantrāloka's own account, two descriptions of the same underlying process viewed from two angles — the practitioner's progress and the mantra's own corresponding "awakening" — rather than two independent variables, a clarification this paper offers as a refinement of, rather than a contradiction to, this paper's earlier and more general siddhi-discussion.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-32">XXXII.</h1>
+  <h2 class="sectiontitle">The Thirty-Six Tattvas and Mantra's Place Within a Graded Cosmology</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Part Eight Section 2.3 noted that classical Āyurveda inherits Sāṃkhya's own twenty-five-tattva ontology directly. Kashmir Śaivism's own cosmology, by contrast, extends this twenty-five-tattva scheme by a further eleven tattvas (for a total of thirty-six), placing the mātṛkā and mantra specifically within the additional, "pure" (śuddha) tier this extended scheme adds above Sāṃkhya's own twenty-five — a placement this section examines as this paper's most direct cosmological grounding for the ontological seriousness Section 3.4's mātṛkā-personification material has already suggested.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>The thirty-six tattvas are organised into three tiers: the śuddha ("pure") tier of the highest eleven tattvas, beginning from Śiva-tattva itself and including Sadāśiva-tattva (the level at which the mātṛkā's own fifty-one phonemes are held to first emerge as distinct, nameable entities) and Śuddhavidyā-tattva; the śuddhāśuddha ("pure-impure") tier of seven further tattvas governing the individual subject's own sense of limitation; and the aśuddha ("impure") tier of the lowest twenty-four tattvas, corresponding closely to Sāṃkhya's own twenty-five minus puruṣa itself (here relocated to the topmost tier as Śiva-tattva's own functional equivalent).</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>The Thirty-Six Tattvas: Three Tiers and Mantra's Placement</caption>
+    <tr><th>Tier</th><th>Tattva Count</th><th>Relevant Content</th></tr>
+    <tr><td>Śuddha (Pure)</td><td>11 (highest)</td><td>Includes Sadāśiva-tattva, the level at which the mātṛkā's phonemes first emerge as distinct entities (Section III, XXVII)</td></tr>
+    <tr><td>Śuddhāśuddha (Pure-Impure)</td><td>7 (middle)</td><td>Governs the individual subject's own sense of limitation (the kañcukas)</td></tr>
+    <tr><td>Aśuddha (Impure)</td><td>24 (lowest)</td><td>Corresponds closely to Sāṃkhya's own twenty-five tattvas (Part Eight Sec. 2.3), minus puruṣa</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This thirty-six-tattva placement supplies this paper's fullest cosmological confirmation of Section 3.4's mātṛkā-personification claim: the mātṛkā is not merely treated symbolically as a goddess but is assigned, within Kashmir Śaivism's own formal ontology, an actual location — Sadāśiva-tattva, near the very summit of the pure tier, well above the twenty-four-tattva region Sāṃkhya's own scheme (and Part Eight's Āyurvedic inheritance of it) covers entirely — confirming that, on this tradition's own systematic account, mantra-śāstra's object is held to be ontologically prior to, rather than merely analogous with, the body and the world Part Eight's own fifteen domains examined.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-33">XXXIII.</h1>
+  <h2 class="sectiontitle">Vāgbhava, Kāmarāja, Śakti: The Three Kūṭas Deepened</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Section 10.2 introduced the Pañcadaśī's three kūṭas at a structural, deliberately non-phonetic level of description, consistent with the restraint Section 10.4 committed this paper to. This section deepens that structural account considerably further, while maintaining the identical restraint regarding the mantra's own specific syllables.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Each of the three kūṭas is held, in the Śrī-Vidyā commentarial tradition (most systematically Bhāskararāya's own Saubhāgya-Bhāskara, already cited in Part Eight's bibliography for its treatment of the Śrī-Cakra's nine āvaraṇas), to correspond not only to a bodily register (Section 10.2's head/heart/lower-body correlation) but to a specific grouping of bīja-types drawn from the mātṛkā (Section III, XXVII): the vāgbhava-kūṭa draws specifically on phonemes the tradition associates with vāc (speech) itself; the kāmarāja-kūṭa draws on phonemes associated with kāma (desire, here understood in its technical sense as the dynamic, world-engendering aspect of consciousness rather than in any narrower sense); and the śakti-kūṭa draws on phonemes associated with śakti (power) in its most concentrated, culminating aspect.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>The Three Kūṭas' Structural (Non-Phonetic) Profile</caption>
+    <tr><th>Kūṭa</th><th>Associated Principle</th><th>Bodily Register (Sec. 10.2)</th><th>Cakra-Correlation (Sec. XXVIII)</th></tr>
+    <tr><td>Vāgbhava-kūṭa</td><td>Vāc (speech)</td><td>Head/upper register</td><td>Viśuddha and above</td></tr>
+    <tr><td>Kāmarāja-kūṭa</td><td>Kāma (dynamic engendering aspect)</td><td>Heart/middle register</td><td>Anāhata</td></tr>
+    <tr><td>Śakti-kūṭa</td><td>Śakti (concentrated power)</td><td>Lower register</td><td>Mūlādhāra and Svādhiṣṭhāna</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This deepened, still phonetically restrained analysis confirms that the Pañcadaśī's own three-kūṭa structure is not merely, as Section 10.3 already argued, structurally parallel to the Śrī-Cakra's nine āvaraṇas, but is further correlated, kūṭa by kūṭa, with the same six-cakra vertical architecture Section XXVIII developed independently — supplying this paper's most fully cross-referenced single technical result, in which mantra (kūṭa-structure), yantra (āvaraṇa-structure), and the body's own subtle physiology (cakra-structure) are shown to converge on a single, three-or-nine-or-six-term graded correspondence the tradition's own commentarial literature treats as a unified system rather than three separately coincidental schemes.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-34">XXXIV.</h1>
+  <h2 class="sectiontitle">Puraścaraṇa: The Full Procedural Manual for Mantra-Accomplishment</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Puraścaraṇa ("preceding action") names the formal, prescribed preliminary discipline a practitioner is held to require before a newly received mantra (Section VIII's dīkṣā) may be considered fit for ordinary, sustained use — a procedural manual this paper has referenced in passing (Sections 5.4, 17.IV) but not yet examined in its own full prescribed structure.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Classical puraścara�025a-vidhi (most systematically codified in later digest literature such as the Mantra-Mahodadhi) prescribes a fixed total japa-count specific to each mantra (often calculated as a fixed multiple of the mantra's own syllable-count, commonly one hundred thousand repetitions per syllable in the most demanding prescriptions), accompanied by four further, proportionally smaller supplementary disciplines, each calculated as a fixed fraction of the main japa-count: homa (fire-offering, conventionally one-tenth of the japa-count), tarpaṇa (libation-offering, conventionally one-tenth of the homa-count, i.e., one-hundredth of the japa-count), marjana (ritual sprinkling, conventionally one-tenth of the tarpaṇa-count), and brāhmaṇa-bhojana (feeding of qualified Brahmins, conventionally one-tenth of the marjana-count) — a nested, decimally-proportioned four-part supplementary structure this paper reads as a further, exceptionally precise instance of the proportional-method this entire series has traced.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Puraścaraṇa's Nested Decimal Proportions</caption>
+    <tr><th>Component</th><th>Proportional Relation</th><th>Function</th></tr>
+    <tr><td>Japa</td><td>Base count (mantra-specific)</td><td>Main repetition-discipline (Section V)</td></tr>
+    <tr><td>Homa</td><td>1/10 of japa-count</td><td>Fire-offering, sealing the japa's own accumulated effect</td></tr>
+    <tr><td>Tarpaṇa</td><td>1/10 of homa-count (1/100 of japa)</td><td>Libation-offering</td></tr>
+    <tr><td>Marjana</td><td>1/10 of tarpaṇa-count (1/1000 of japa)</td><td>Ritual sprinkling/purification</td></tr>
+    <tr><td>Brāhmaṇa-Bhojana</td><td>1/10 of marjana-count (1/10,000 of japa)</td><td>Feeding of qualified Brahmins, closing the sequence</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This precisely specified, decimally nested four-part supplementary structure supplies this paper's most quantitatively explicit documented instance of the krama (fixed procedural sequence) and saṃskāra (transformative processing) logic Sections V, VIII, and Part Eight Sections VIII, XIX, and XXX have traced throughout this series in less numerically specified form — confirming that the proportional method this series has identified as a general feature of classical Indian technical reasoning extends, in puraścaraṇa's own case, to an explicit, fixed numerical ratio rather than remaining only a qualitative proportionality claim.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-35">XXXV.</h1>
+  <h2 class="sectiontitle">Apūrva and Mīmāṃsā's Causal Theory of Mantra</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>The Pūrva-Mīmāṃsā school's own causal theory of Vedic ritual efficacy — developed to explain how a ritual act performed in the present can produce a fruit (phala) realised only much later, after the act itself has ceased to exist — turns on the concept of apūrva, an unseen, intermediate potency the ritual act is held to generate and which itself persists until it ripens into the promised result. This section examines apūrva's own bearing on mantra's claimed causal mechanism, a connection this paper's earlier material (Sections 1.1, VII) has not yet drawn explicitly to the Mīmāṃsā source.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Mīmāṃsā's own classical position holds that a śrauta mantra's efficacy (Section 1.1's first sense) operates through exactly this apūrva-mechanism: correct recitation, performed by a qualified reciter under the proper procedural conditions, generates an apūrva that persists independently of the reciter's own continued attention or even the reciter's own continued existence, eventually ripening into the ritual's promised fruit — a mechanism this paper reads as offering a considerably more developed causal theory than the Tantric tradition's own siddhi-language (Section VII) typically articulates explicitly, even though both traditions share the underlying conviction that a properly performed mantra-act produces effects extending well beyond the act's own immediate duration.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Apūrva and Mantra-Siddhi: Two Accounts of Delayed Efficacy</caption>
+    <tr><th>Dimension</th><th>Mīmāṃsā's Apūrva</th><th>Tantric Siddhi (Section VII)</th></tr>
+    <tr><td>Mechanism of persistence</td><td>An unseen intermediate potency (apūrva) generated by the act itself</td><td>Less formally theorised; siddhi described primarily through observable practitioner-signs (Section 7.2)</td></tr>
+    <tr><td>Dependence on reciter's continued attention</td><td>No — apūrva persists independently</td><td>Largely yes — siddhi is the practitioner's own accomplished state</td></tr>
+    <tr><td>Primary textual home</td><td>Mīmāṃsā-Sūtra and its commentarial tradition</td><td>Tantric paddhati literature; the Tantrāloka's mantra-vīrya doctrine (Section XXXI)</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This paper treats the apūrva comparison as evidence that the Vedic-ritual and Tantric-mantric strands this paper's Section 1.1 distinguished as separate senses of mantra in fact share, at the level of underlying causal commitment, a common conviction that a properly performed sound-act generates effects through some form of persisting, unseen potency — Mīmāṃsā's own apūrva-theory simply being the more philosophically rigorous, systematically argued version of a causal intuition the Tantric tradition's own siddhi and mantra-vīrya material (Section XXXI) expresses in less formally theorised but practically equivalent terms.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-36">XXXVI.</h1>
+  <h2 class="sectiontitle">Case Study: The Lalitā-Sahasranāma as an Integrated Capstone Text</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>The Lalitā-Sahasranāma (the "thousand names" of the goddess Lalitā, embedded within the Brahmāṇḍa-Purāṇa and closely affiliated with the Śrī-Vidyā tradition this paper's Sections X, XXIX, and XXXIII have already examined) is offered here as this paper's capstone documented case study, integrating nearly every technical thread this paper has developed into a single, continuously recited text.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>The text's own structure documents a direct, name-by-name correlation with the Śrī-Cakra's nine āvaraṇas (Part Eight Section XXXIV; this paper's Section 10.3) — specific clusters of names within the thousand-name sequence are traditionally assigned to specific āvaraṇas, such that recitation of the full text is held to constitute a complete, verbal traversal of the yantra's own outward-to-inward geometric structure; the text opens with its own dhyāna-śloka (a meditation-verse establishing the goddess's visualised form, paralleling nyāsa's own preparatory function, Section VI) and closes with a phala-śruti (a verse specifying the recitation's own promised fruit, structurally parallel to the apūrva-mechanism Section XXXV examined for Vedic ritual).</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>The Lalitā-Sahasranāma's Integrated Structure</caption>
+    <tr><th>Textual Component</th><th>Function</th><th>Parallel Elsewhere in This Paper</th></tr>
+    <tr><td>Opening dhyāna-śloka</td><td>Establishes the goddess's visualised form prior to recitation</td><td>Nyāsa's preparatory function (Section VI)</td></tr>
+    <tr><td>Thousand names, clustered by āvaraṇa</td><td>Verbal traversal of the Śrī-Cakra's nine-āvaraṇa structure</td><td>The Śrī-Cakra itself (Part Eight Sec. XXXIV; this paper Sec. 10.3)</td></tr>
+    <tr><td>Closing phala-śruti</td><td>Specifies the recitation's promised fruit</td><td>Apūrva's own delayed-fruit mechanism (Section XXXV)</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>The Lalitā-Sahasranāma's documented, name-by-name āvaraṇa-correlation supplies this paper's single most fully integrated case study, drawing together nyāsa-like preparatory visualisation, Śrī-Cakra-correlated structure, and a Mīmāṃsā-resonant promised-fruit closing formula within one continuously recited, historically documented text — confirming, at the level of a single worked example, this paper's overarching claim (Section 11.1) that mantra-śāstra's technical apparatus, however many separate doctrinal strands this paper's thirty-six preceding sections have traced to distinct textual sources, was in actual historical practice experienced and transmitted as a single, integrated discipline.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <section class="context-box">
+    <h3>A Note on Sections XXXVII–XLIII — The Closing Block</h3>
+    <p>The final seven sections, carried forward from this paper's original edition and renumbered to follow the new third expansion block above, offer two explicitly bracketed modern comparisons, a further epigraphic case study, a methodological appendix, an expanded glossary, and a closing recap and meta-synthesis preparing the handoff to Part Ten.</p>
+  </section>
+
+  <h1 class="sectionhead" id="sec-37">XXXVII.</h1>
+  <h2 class="sectiontitle">J. L. Austin's Speech-Act Theory Compared, with Methodological Caution</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>J. L. Austin's How to Do Things with Words (1962) develops the concept of the performative utterance — an utterance that does not merely describe a state of affairs but itself constitutes an action (the classic examples: "I do" in a wedding, "I name this ship," a judge's "I sentence you") — a concept this section compares to mantra's own efficacy-claims with the same caution Part Eight Sections XXXV and XXXVI, and this paper's own Section XX, have applied throughout to cross-cultural structural parallels.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Austin's own felicity-conditions for a performative to succeed — that it be uttered by an appropriately authorised person, in an appropriate institutional context, following an appropriate conventional procedure — bear a genuine structural resemblance to this paper's own dīkṣā-requirement (Section VIII) and adhikāra-logic (Section 7.3): both frameworks hold that the same string of sounds, uttered by an unauthorised speaker or outside the appropriate procedural context, simply fails to produce its intended effect. The frameworks diverge, however, in a respect this paper considers decisive: Austin's performatives operate entirely within ordinary social and institutional convention (a wedding, a court, a christening), producing effects (a marriage, a sentence, a name) that are themselves social facts constituted by convention; mantra-efficacy claims, by contrast, are held by the tradition to operate on the practitioner's own citta or, in the strongest theological versions (Section 9.2, Section XXXI), on the practitioner's own metaphysical condition — a claim of a fundamentally different order than Austin's own deliberately convention-bound theory addresses or was ever intended to address.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Austin's Performative and Mantra-Efficacy: Convergence and Divergence</caption>
+    <tr><th>Dimension</th><th>Austin's Performative</th><th>Mantra-Efficacy</th></tr>
+    <tr><td>Requires authorised speaker</td><td>Yes (felicity-condition)</td><td>Yes (dīkṣā, Sec. VIII)</td></tr>
+    <tr><td>Requires appropriate procedure</td><td>Yes (felicity-condition)</td><td>Yes (japa-saṃkhyā, nyāsa, puraścaraṇa, Sec. V–VI, XXXIV)</td></tr>
+    <tr><td>Effect produced</td><td>A social/institutional fact (marriage, sentence)</td><td>A claimed transformation in citta or metaphysical condition (siddhi, mantra-vīrya, Sec. VII, XXXI)</td></tr>
+    <tr><td>Theoretical scope</td><td>Deliberately bounded to convention-constituted facts</td><td>Extends to claims about consciousness and reality itself (Sec. IX, XXX)</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This paper treats the Austin comparison as instructive specifically at the level of felicity-condition structure (both frameworks require authorised speaker and appropriate procedure for an utterance to "succeed"), while explicitly declining to claim that Austin's own deliberately convention-bound theory either confirms or could in principle adjudicate the further, metaphysically loaded efficacy-claims (Section 9.2, Section XIX, Section XXXI) the mantra-tradition makes on its own behalf — a divergence this paper does not collapse, consistent with this paper's own Section XL methodological commitments.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-38">XXXVIII.</h1>
+  <h2 class="sectiontitle">Psycholinguistic Priming Research Compared, with Methodological Caution</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Modern psycholinguistic research on repetition priming — the well-documented finding that repeated exposure to a stimulus measurably alters a subject's subsequent processing speed, recognition threshold, and in some paradigms reported affective association with that stimulus — offers this paper's final modern comparison, examined with the same caution this paper's preceding comparative sections have maintained.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Japa's own central premise (Section 5.2) — that repeated recitation of a fixed sound-sequence produces, over a documented prescribed count, a measurable change in the practitioner's own citta — bears a structural resemblance to priming research's own general finding that repeated exposure to a linguistic stimulus alters a subject's processing of that stimulus in measurable ways. This paper is careful to note the comparison's real limits: priming research's own documented effects (faster lexical-decision response times, altered recognition thresholds) are considerably more modest in scope, and considerably more rigorously measured under controlled experimental conditions, than the tradition's own siddhi-claims (Section VII) and mantra-vīrya claims (Section XXXI), which extend to reported dream-content, a felt sense of deity-presence, and in the tradition's own strongest formulations to claimed transformation of the practitioner's basic relationship to reality (Section 9.2) — claims of a different order and a different evidentiary standard than controlled psycholinguistic experiment addresses.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <div class="reading-note"><b>Structural Parallel, Not Equivalence</b> — Both japa and priming research treat repeated exposure to a fixed linguistic stimulus as producing a measurable change in the subject exposed to it; only priming research, however, restricts its own claims to effects measured under controlled experimental conditions, while japa's own siddhi-claims (Section VII) extend considerably further, into domains (dream-content, felt deity-presence, claimed metaphysical realisation) that controlled psycholinguistic methodology was not designed to and does not purport to adjudicate.</div>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This paper offers the priming comparison, like the Austin comparison before it, as evidence that repetition-based linguistic intervention altering a subject's own processing is a structurally general finding independently arrived at by both the classical mantra-tradition and modern experimental psycholinguistics, while explicitly declining to claim that modern research thereby validates, explains, or could adjudicate the tradition's own considerably more expansive siddhi and mantra-vīrya claims — the same evidentiary caution this paper's Section XX, and Part Eight's own Sections XXXV, XXXVI, and XXXIX–XL, have maintained throughout this series' comparative excursions.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-39">XXXIX.</h1>
+  <h2 class="sectiontitle">Epigraphic Case Study: Mantra in Donative Inscriptions</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Part Eight Sections XXII and XXXVII examined the Aśokan edicts and the Junāgaḍh inscription of Rudradāman as documented epigraphic evidence for saptāṅga and indriyajaya-equivalent administrative concern respectively. This section examines a third category of epigraphic evidence directly relevant to this paper's own subject: the oṃ-invocation and protective mantra-formulae that conventionally open and close donative inscriptions (śāsana, tāmra-paṭṭa copper-plate grants) across a wide span of documented medieval Indian epigraphic practice.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Medieval copper-plate land-grant inscriptions across multiple regional dynasties (the practice is documented across Pallava, Cālukya, and later Cōḻa epigraphy among others) conventionally open with an oṃ-invocation and frequently close with a formulaic protective verse threatening curse-consequences (the widely attested ṣaṣṭi-varṣa-sahasrāṇi formula and its variants) upon any future ruler who might violate the grant's own terms — a documented, epigraphically attested instance of mantra-adjacent formulaic language deployed for a specifically protective, boundary-asserting function this paper's own Section XV would classify as broadly tāmasika in register.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <div class="reading-note"><b>Documented Instance</b> — The closing protective-curse formula appended to a great many medieval copper-plate grants, while textually variable across regions and dynasties, consistently invokes the durability of the inscribed grant against future violation through formulaic, ritually-toned language this paper reads as a documented, epigraphically attested instance of the tāmasika, boundary-asserting mantra-register Section XV.III developed theoretically — applied here not to a deity-directed personal practice but to the legal-administrative protection of a specific land-grant, a further instance of mantra's own documented extension into Arthaśāstric administrative practice (Part Eight Section XXI's own second sense) this paper's earlier sections have largely treated separately from its Tantric sense.</div>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This epigraphic material supplies this paper's own clearest documented confirmation that mantra's three senses (Section 1.1) were not, in actual historical practice, as cleanly separable as this paper's own organisational scheme might suggest: a single donative inscription's closing formula draws simultaneously on the protective, tāmasika mantra-register this paper's Tantric material (Section XV) developed and on the Arthaśāstric administrative-document context Part Eight's own material established, confirming that the three-sense distinction this paper inherited from Part Eight Section XXI is, as that section's own phala already concluded, best read as three converging facets of one underlying logic rather than as three institutionally walled-off practices.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-40">XL.</h1>
+  <h2 class="sectiontitle">Methodological Appendix: Distinguishing Documented Fact, Synthetic Proposal, and Bracketed Comparison</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>Following the precedent Part Eight Section XLII established, this appendix makes explicit the same three-way epistemic distinction this paper has tried to maintain across its forty sections.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>First, textually documented fact — claims directly supported by named primary sources (the Nāda-Bindu-Upaniṣad, the Parātrīśikā-Vivaraṇa, the Gheraṇḍa-Saṃhitā, the Māheśvara-Sūtras, the Ṣaṭ-Cakra-Nirūpaṇa, the Spanda-Kārikā, the Tantrāloka, the Mantra-Mahodadhi, the Lalitā-Sahasranāma, and the epigraphic corpus cited in Section XXXIX), including the specific technical vocabulary this paper has drawn from those sources. Second, this paper's own structural-synthetic proposal — most prominently the catuṣpadī-to-mantra-practice mapping (Section 4.2), the sphoṭa-bīja connection (Section XIV), the twelve-term recursive-homology argument (Section XXVI), and the spanda-as-prior-to-Parā refinement (Section XXX.IV) — claims this paper has flagged at several points as this paper's own synthesis rather than positions the primary sources articulate in precisely these terms. Third, explicitly bracketed modern comparison — the Vajrayāna, Austin, and psycholinguistic-priming discussions (Sections XX, XXXVII, XXXVIII) — offered throughout for structural resonance only.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <table class="datatable">
+    <caption>Three Epistemic Categories Applied Across This Paper</caption>
+    <tr><th>Category</th><th>Example</th><th>Section(s)</th></tr>
+    <tr><td>Textually documented fact</td><td>The ṣaḍaṅga-nyāsa sequence; the Gāyatrī's three pādas; the Ṣaṭ-Cakra-Nirūpaṇa's phoneme-petal scheme; puraścaraṇa's decimal ratios; the Junāgaḍh-adjacent epigraphic curse-formulae</td><td>VI, XVIII, XXVII, XXXIV, XXXIX</td></tr>
+    <tr><td>This paper's structural-synthetic proposal</td><td>The catuṣpadī-to-japa mapping; the sphoṭa-bīja connection; the twelve-term recursive homology; spanda as prior to Parā</td><td>4.2, XIV, XXVI, XXX</td></tr>
+    <tr><td>Explicitly bracketed modern comparison</td><td>Vajrayāna, Austin's performatives, psycholinguistic priming</td><td>XX, XXXVII, XXXVIII</td></tr>
+  </table>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This explicit three-way distinction, consistent with Part Eight's own precedent, is intended to allow a reader to engage critically with this paper's most ambitious claim — that mantra-śāstra constitutes the series' own recursive closure (Section 11.1) — without mistaking that claim for an uncontested position within the primary sources themselves, even as this revised edition's third expansion block (Sections XXVII–XXXVI) has substantially deepened the documented-fact category this paper can draw upon in support of that claim.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-41">XLI.</h1>
+  <h2 class="sectiontitle">Expanded Glossary: New Technical Vocabulary from This Paper</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>This section supplies a focused glossary for the Sanskrit technical vocabulary this paper has introduced, beyond the closing main Glossary below, now including the considerable additional vocabulary the third expansion block (Sections XXVII–XXXVI) has introduced.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Terms are listed in order of first appearance.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <dl class="glossary">
+    <dt><span class="glossterm">बीजमन्त्र</span> bīja-mantra</dt>
+    <dd>A single seed-syllable held to condense an entire deity or principle into minimal phonetic compass (Section II).</dd>
+    <dt><span class="glossterm">मातृका</span> mātṛkā</dt>
+    <dd>The fifty-one (or fifty) phonemes of Sanskrit considered as a closed, generative, deity-correlated set rather than a grammatical inventory (Section III, developed in full at Section XXVII).</dd>
+    <dt><span class="glossterm">जप</span> japa</dt>
+    <dd>Disciplined, prescribed mantra-repetition in three graded modes — vācika, upāṃśu, mānasa (Section V).</dd>
+    <dt><span class="glossterm">न्यास</span> nyāsa</dt>
+    <dd>Ritual placement of mantra-syllables onto specific points of the practitioner's own body (Section VI; full-resolution mātṛkā-nyāsa at Section XXVII).</dd>
+    <dt><span class="glossterm">सिद्धि</span> (मन्त्रसिद्धि) mantra-siddhi</dt>
+    <dd>The state of accomplishment at which a mantra is held to have become fully efficacious for a given practitioner (Section VII; refined as mantra-vīrya at Section XXXI).</dd>
+    <dt><span class="glossterm">दीक्षा</span> dīkṣā</dt>
+    <dd>Formal initiatory transmission of a mantra from a qualified guru, held necessary for the mantra's efficacy (Section VIII).</dd>
+    <dt><span class="glossterm">प्रत्यभिज्ञा</span> pratyabhijñā</dt>
+    <dd>"Recognition" — the Kashmir Śaiva doctrine that mantra-recitation occasions recognition of an already-present non-dual identity rather than producing a new state (Section IX).</dd>
+    <dt><span class="glossterm">नादब्रह्म</span> nāda-brahman</dt>
+    <dd>The doctrine identifying subtle, unstruck sound (anāhata nāda) with brahman itself (Section XIII).</dd>
+    <dt><span class="glossterm">अजपाजप</span> ajapā-japa</dt>
+    <dd>"Unrepeated repetition" — mantra synchronised with the breath's own involuntary rhythm, requiring no active counted repetition (Section XVI).</dd>
+    <dt><span class="glossterm">महावाक्य</span> mahāvākya</dt>
+    <dd>One of the Upaniṣadic "great sayings," distinguished from bīja-mantra by its dependence on comprehended realisation rather than phonetic recitation alone (Section XIX).</dd>
+    <dt><span class="glossterm">कुण्डलिनी</span> kuṇḍalinī</dt>
+    <dd>Latent energy held to ascend through the body's six cakras when activated by disciplined practice, including mantra-japa (Section XXVIII).</dd>
+    <dt><span class="glossterm">षट्चक्र</span> ṣaṭ-cakra</dt>
+    <dd>The six principal subtle energy-centres of classical Tantric physiology, each assigned its own presiding bīja-mantra and phoneme-set (Sections XXVII–XXVIII).</dd>
+    <dt><span class="glossterm">समयाचार / कौलाचार</span> samaya-ācāra / kaula-ācāra</dt>
+    <dd>Two documented interpretive approaches within Śrī-Vidyā, distinguished by internalised-symbolic versus external ritual practice (Section XXIX).</dd>
+    <dt><span class="glossterm">स्पन्द</span> spanda</dt>
+    <dd>The subtle creative "vibration" or "throb" of consciousness itself, held in the Spanda-Kārikā to be logically prior even to sound (Section XXX).</dd>
+    <dt><span class="glossterm">मन्त्रवीर्य</span> mantra-vīrya</dt>
+    <dd>"Mantra-potency" — the Tantrāloka's own term for a mantra's fully awakened, efficacy-bearing condition, as distinct from merely mechanical repetition (Section XXXI).</dd>
+    <dt><span class="glossterm">षट्त्रिंशत्तत्त्व</span> ṣaṭ-triṃśat-tattva</dt>
+    <dd>The thirty-six-tattva cosmology of Kashmir Śaivism, extending Sāṃkhya's twenty-five tattvas by a further eleven, within which the mātṛkā is placed near the cosmology's summit (Section XXXII).</dd>
+    <dt><span class="glossterm">पुरश्चरण</span> puraścaraṇa</dt>
+    <dd>The formal preliminary discipline of fixed, decimally proportioned japa, homa, tarpaṇa, marjana, and brāhmaṇa-bhojana required before a mantra is considered fit for ordinary use (Section XXXIV).</dd>
+    <dt><span class="glossterm">अपूर्व</span> apūrva</dt>
+    <dd>Mīmāṃsā's own term for the unseen, persisting potency a ritual or mantra-act is held to generate, ripening later into its promised fruit (Section XXXV).</dd>
+  </dl>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>This focused glossary, read together with the closing main Glossary, gives readers a single consolidated reference for the technical vocabulary this paper's forty-three sections have introduced.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-42">XLII.</h1>
+  <h2 class="sectiontitle">Recap and Handoff to Part Ten</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>This section restates, in consolidated form, the handoff Section XII originally established, now updated to reflect this revised and expanded edition's full forty-three-section argument.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Section XXII's Śiva-Sūtra case study (vyākaraṇa and mantra sharing a single traditionally unified phoneme-substrate), Section XXIX's Samaya/Kaula case study (a single technical apparatus supporting documented divergent institutional transmission-lineages), Section XXXIV's puraścaraṇa material (the precise, decimally specified procedural requirements governing a mantra's transmission from initiatory dīkṣā to sustained ordinary use), and Section XXXIX's epigraphic case study together constitute this paper's fullest preparation for Part Ten's own announced task: examining, across documented historical case studies, how the particular śāstras this series has surveyed — vyākaraṇa, nyāya, arthaśāstra, āyurveda, and now mantra-śāstra — were actually transmitted, taught, and preserved across Indian intellectual history.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <div class="reading-note"><b>The Direct Thread to Part Ten</b> — The Śiva-Sūtras' dual grammatical-mantric service (Section XXII) → the Samaya/Kaula institutional divergence (Section XXIX) → puraścaraṇa's own precisely specified transmission-and-accomplishment procedure (Section XXXIV) → the donative inscription's triple-sense convergence (Section XXXIX) together constitute this paper's fullest possible preparation for Part Ten's own argument that every śāstra this series has surveyed depended, for its own continuity across generations, on documented institutional transmission-mechanisms this paper's own mantra-specific material has now examined in considerably finer procedural and doctrinal detail than this paper's original edition provided.</div>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>Part Ten inherits, from this revised and expanded edition, not only the original twelve-section recursive-closure argument but the full forty-three-section technical apparatus within which mantra's own dīkṣā-transmission requirement (Section VIII), its documented institutional divergence (Section XXIX), and its precisely specified procedural manual (Section XXXIV) now stand as this series' most procedurally and doctrinally detailed documented case of exactly the kind of disciplined intergenerational transmission Part Ten's own case studies will examine across the series' other proliferated śāstras.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-43">XLIII.</h1>
+  <h2 class="sectiontitle">Closing Meta-Synthesis</h2>
+  <h3>I. Lakṣaṇa — Definition and Scope</h3>
+  <p>This final section closes the revised and expanded Extended Deep Edition with a single consolidated statement of the paper's complete argument, from its original twelve sections through all three expansion blocks.</p>
+  <h3>II. Prakriyā — The Operative Method</h3>
+  <p>Forty-three sections, three lakṣaṇa–prakriyā–udāharaṇa–phala-structured expansion passes, and one sustained recursive-closure argument converge on a single claim this paper has restated in varying registers throughout, and has now grounded at a depth its original edition could only gesture toward: that the discriminating citta this series has traced from Vāk's own pre-differentiated ground (Part One) through grammar and logic (Part Seven) and outward into the state and the body (Part Eight) completes a circle in mantra-śāstra, returning to its own point of departure not to repeat it but to convert it — bīja by bīja, nyāsa-point by nyāsa-point, cakra by cakra, kūṭa by kūṭa, japa-count by precisely specified puraścaraṇa japa-count — into a technology a practitioner can actually hold, repeat, and, the tradition itself claims, be transformed by.</p>
+  <h3>III. Udāharaṇa — A Worked Example</h3>
+  <blockquote class="pull">
+    Forty-three sections ago this paper began with a single seed-syllable, condensed enough to fit on the breath's own ordinary rhythm. It closes having traced that syllable through fifty-one mothers distributed across a thousand-petalled crown, fifteen kūṭa-bound verses correlated kūṭa by kūṭa with six rising cakras, a vibration the Spanda-Kārikā places prior even to sound itself, a potency the Tantrāloka insists must be awakened and not merely repeated, a cosmology that places the alphabet near the summit of the real, a procedural manual specifying its own accomplishment to the exact decimal fraction, and a king's land-grant carved in stone against the violation of centuries. The recursion this paper's subtitle names was never really about sound returning to sound. It was about a tradition discovering that the same disciplined seeing it had learned to turn outward — onto a kingdom, a body, a syllogism — could be turned, at last, all the way back onto the very voice doing the looking, and held there, syllable by syllable, until the looking and the syllable were no longer two things.
+    <span class="attrib">Series B · Editorial Framework</span>
+  </blockquote>
+  <h3>IV. Phala — Resulting Implication</h3>
+  <p>With this closing meta-synthesis, the revised and expanded Extended Deep Edition of Part Nine stands complete at forty-three sections, ready for the handoff Section XLII has already specified to Part Ten's own case-study treatment of śabda-to-śāstra transmission, and offered to the wider series as the installment most directly concerned with the series' own founding subject, Vāk, encountered here not as ground but as technique, and pursued, in this revised edition, to a depth its predecessor could only outline.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <section id="footnotes">
+    <h2 class="sectiontitle" style="font-size:22px;">Footnotes</h2>
+    <ol class="footnotes">
+      <li><sup>1</sup> On mantra's three senses generally: see Part Eight, Section XXI, and the present paper's own restatement, Section I.</li>
+      <li><sup>2</sup> On bīja-mantra theory: Douglas Renfrew Brooks, <i>The Secret of the Three Cities: An Introduction to Hindu Śākta Tantrism</i> (Chicago: University of Chicago Press, 1990).</li>
+      <li><sup>3</sup> On the mātṛkā and its place in Tantric practice: André Padoux, <i>Vāc: The Concept of the Word in Selected Hindu Tantras</i>, trans. Jacques Gontier (Albany: SUNY Press, 1990), already cited in Part Eight's own bibliography.</li>
+      <li><sup>4</sup> On Part One's catuṣpadī architecture: as developed in the present series' own Part One.</li>
+      <li><sup>5</sup> On japa's three modes: Jan Gonda, <i>Vedic Literature</i> (Wiesbaden: Otto Harrassowitz, 1975), and the later Tantric paddhati corpus generally.</li>
+      <li><sup>6</sup> On nyāsa: Brooks, <i>The Secret of the Three Cities</i>, ch. 4.</li>
+      <li><sup>7</sup> On mantra-siddhi and its experiential criteria: the later Tantric paddhati literature.</li>
+      <li><sup>8</sup> On dīkṣā and guru-śiṣya transmission, including the three documented modes (Section 8.4): Brooks, op. cit.; Padoux, <i>Vāc</i>.</li>
+      <li><sup>9</sup> On the Pratyabhijñā school: Utpaladeva, <i>Īśvara-Pratyabhijñā-Kārikā</i>; Abhinavagupta, <i>Parātrīśikā-Vivaraṇa</i>, trans. Jaideva Singh (Delhi: Motilal Banarsidass, 1988).</li>
+      <li><sup>10</sup> On the Śrī-Vidyā Pañcadaśī: Brooks, <i>The Secret of the Three Cities</i>; Sanjukta Gupta et al., <i>Hindu Tantrism</i> (Leiden: Brill, 1979), already cited in Part Eight.</li>
+      <li><sup>11–12</sup> On Sections XI–XII's own synthesis and forward-argument: the present paper's own structural proposal, as flagged in Section XL.</li>
+      <li><sup>13</sup> On nāda-brahman: <i>Nāda-Bindu-Upaniṣad</i>, trans. K. Narayanasvami Aiyar, in <i>Thirty Minor Upanishads</i> (Madras: 1914; repr. various editions).</li>
+      <li><sup>14</sup> On sphoṭa-theory: Bhartṛhari, <i>Vākyapadīya</i>, as cited in Part Seven's own bibliography.</li>
+      <li><sup>15</sup> On the three guṇic classes of mantra: Tantric paddhati corpus generally.</li>
+      <li><sup>16</sup> On ajapā-japa: Svātmārāma, <i>Haṭha-Yoga-Pradīpikā</i>, trans. Pancham Sinh (Allahabad: 1914; repr. various editions).</li>
+      <li><sup>17</sup> On mantra-yoga's six limbs: <i>Gheraṇḍa-Saṃhitā</i>, trans. Rai Bahadur Srisa Chandra Vasu (Allahabad: 1914–15; repr. various editions).</li>
+      <li><sup>18</sup> On the Gāyatrī mantra: Ṛg Veda III.62.10; Frits Staal, <i>Discovering the Vedas</i> (New Delhi: Penguin, 2008).</li>
+      <li><sup>19</sup> On the mahāvākyas: the standard Advaita Vedānta corpus, particularly Śaṅkara's own Upaniṣad-bhāṣyas.</li>
+      <li><sup>20</sup> On Vajrayāna mantra-practice: Donald S. Lopez Jr., <i>Prisoners of Shangri-La: Tibetan Buddhism and the West</i> (Chicago: University of Chicago Press, 1998), and Robert Thurman, trans., <i>The Central Philosophy of Tibet</i> (Princeton: Princeton University Press, 1984), for general orientation.</li>
+      <li><sup>21</sup> On nāda-yoga and Part Three's Sāma material: Aiyar, <i>Thirty Minor Upanishads</i>; the present series' own Part Three.</li>
+      <li><sup>22</sup> On the Māheśvara-Sūtras: Pāṇini, <i>Aṣṭādhyāyī</i>, as cited in Part Seven's own bibliography.</li>
+      <li><sup>23</sup> On mantra-cikitsā and bhūta-vidyā: Suśruta Saṃhitā, Uttaratantra LX, already cited in Part Eight.</li>
+      <li><sup>24</sup> On mantra's activating role in vāstu and yantra ritual: Stella Kramrisch, <i>The Hindu Temple</i>, already cited in Part Eight.</li>
+      <li><sup>25</sup> On regional mantra-schools: Brooks, <i>The Secret of the Three Cities</i> (Śrī-Vidyā); June McDaniel, <i>Offering Flowers, Feeding Skulls: Popular Goddess Worship in West Bengal</i> (New York: Oxford University Press, 2004) (Bengal Śākta material).</li>
+      <li><sup>26</sup> On the twelve-term recursive homology: the present paper's own synthesis.</li>
+      <li><sup>27</sup> On the mātṛkā's full phoneme-cakra correspondence: Pūrṇānanda, <i>Ṣaṭ-Cakra-Nirūpaṇa</i>, trans. and ed. Sir John Woodroffe (Arthur Avalon), in <i>The Serpent Power</i> (Madras: Ganesh & Co., 1918; repr. various editions).</li>
+      <li><sup>28</sup> On kuṇḍalinī and the six cakras: Woodroffe, <i>The Serpent Power</i>, op. cit.</li>
+      <li><sup>29</sup> On Samaya and Kaula approaches within Śrī-Vidyā: Brooks, <i>The Secret of the Three Cities</i>; Bhāskararāya, <i>Saubhāgya-Bhāskara</i>, already cited in Part Eight.</li>
+      <li><sup>30</sup> On the Spanda-Kārikā: Vasugupta, <i>Spanda-Kārikā</i>, trans. Jaideva Singh as <i>Spanda-Kārikās: The Divine Creative Pulsation</i> (Delhi: Motilal Banarsidass, 1980).</li>
+      <li><sup>31</sup> On the Tantrāloka and mantra-vīrya: Abhinavagupta, <i>Tantrāloka</i>, partial trans. and study in Paul E. Muller-Ortega, <i>The Triadic Heart of Śiva</i> (Albany: SUNY Press, 1989).</li>
+      <li><sup>32</sup> On the thirty-six tattvas: Gavin Flood, <i>The Tantric Body: The Secret Tradition of Hindu Religion</i> (London: I. B. Tauris, 2006).</li>
+      <li><sup>33</sup> On the Pañcadaśī's three kūṭas in deepened analysis: Bhāskararāya, <i>Saubhāgya-Bhāskara</i>; Brooks, <i>The Secret of the Three Cities</i>.</li>
+      <li><sup>34</sup> On puraścaraṇa: <i>Mantra-Mahodadhi</i> of Mahīdhara, as surveyed in Gudrun Bühnemann's general studies of Tantric ritual manuals.</li>
+      <li><sup>35</sup> On apūrva and Mīmāṃsā's causal theory: Jaimini, <i>Mīmāṃsā-Sūtra</i>, with Śabara's Bhāṣya; Francis X. Clooney, <i>Thinking Ritually: Rediscovering the Pūrva Mīmāṃsā of Jaimini</i> (Vienna: De Nobili, 1990).</li>
+      <li><sup>36</sup> On the Lalitā-Sahasranāma: as embedded in the <i>Brahmāṇḍa-Purāṇa</i>; commentary tradition surveyed in Brooks, <i>The Secret of the Three Cities</i>.</li>
+      <li><sup>37</sup> On Austin's performative utterances: J. L. Austin, <i>How to Do Things with Words</i> (Oxford: Clarendon Press, 1962).</li>
+      <li><sup>38</sup> On repetition priming in psycholinguistics: general overview in David A. Balota and James I. Yap, "Repetition Priming," in <i>Handbook of Psycholinguistics</i>, ed. Morton Ann Gernsbacher (San Diego: Academic Press, 1994).</li>
+      <li><sup>39</sup> On donative-inscription mantra formulae: D. C. Sircar, <i>Indian Epigraphy</i> (Delhi: Motilal Banarsidass, 1965), and <i>Select Inscriptions Bearing on Indian History and Civilization</i>, already cited in Part Eight.</li>
+      <li><sup>40–43</sup> On the closing methodological, glossary, recap, and synthesis sections: the present paper's own structural apparatus, following the precedent of Part Eight Sections XLII–XLV.</li>
+    </ol>
+  </section>
+
+  <div class="divider-orn">★</div>
+
+  <section id="bibliography">
+    <h2 class="sectiontitle" style="font-size:22px;">Bibliography</h2>
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;">Primary Sources</h4>
+    <p class="dim" style="font-size:14.5px;">
+    Utpaladeva. <i>Īśvara-Pratyabhijñā-Kārikā.</i> Trans. Raffaele Torella. Rome: Istituto Italiano per il Medio ed Estremo Oriente, 1994.<br>
+    Abhinavagupta. <i>Parātrīśikā-Vivaraṇa.</i> Trans. Jaideva Singh. Delhi: Motilal Banarsidass, 1988.<br>
+    Abhinavagupta. <i>Tantrāloka.</i> Partial trans. and study in Paul E. Muller-Ortega, <i>The Triadic Heart of Śiva.</i> Albany: SUNY Press, 1989.<br>
+    Vasugupta. <i>Spanda-Kārikā.</i> Trans. Jaideva Singh as <i>Spanda-Kārikās: The Divine Creative Pulsation.</i> Delhi: Motilal Banarsidass, 1980.<br>
+    Pūrṇānanda. <i>Ṣaṭ-Cakra-Nirūpaṇa.</i> Trans. and ed. Sir John Woodroffe (Arthur Avalon), in <i>The Serpent Power.</i> Madras: Ganesh & Co., 1918; repr. various editions.<br>
+    Jaimini. <i>Mīmāṃsā-Sūtra</i>, with Śabara's Bhāṣya. Standard critical editions.<br>
+    Mahīdhara. <i>Mantra-Mahodadhi.</i> Standard critical editions.<br>
+    Bhāskararāya. <i>Saubhāgya-Bhāskara</i> (commentary on the Lalitā-Sahasranāma and the Śrī-Cakra), already cited in Part Eight's own bibliography.<br>
+    <i>Lalitā-Sahasranāma</i> (embedded in the <i>Brahmāṇḍa-Purāṇa</i>). Standard critical editions and commentary tradition.<br>
+    <i>Nāda-Bindu-Upaniṣad.</i> Trans. K. Narayanasvami Aiyar, in <i>Thirty Minor Upanishads.</i> Madras, 1914; repr. various editions.<br>
+    Svātmārāma. <i>Haṭha-Yoga-Pradīpikā.</i> Trans. Pancham Sinh. Allahabad, 1914; repr. various editions.<br>
+    <i>Gheraṇḍa-Saṃhitā.</i> Trans. Rai Bahadur Srisa Chandra Vasu. Allahabad, 1914–15; repr. various editions.<br>
+    Pāṇini. <i>Aṣṭādhyāyī</i> (with the Māheśvara-Sūtras). As cited in the present series' own Part Seven.<br>
+    Bhartṛhari. <i>Vākyapadīya.</i> As cited in the present series' own Part Seven.<br>
+    Ṛg Veda III.62.10 (the Gāyatrī mantra), in standard critical editions.<br>
+    Austin, J. L. <i>How to Do Things with Words.</i> Oxford: Clarendon Press, 1962.
+    </p>
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin-top:24px;">Secondary Sources</h4>
+    <p class="dim" style="font-size:14.5px;">
+    Padoux, André. <i>Vāc: The Concept of the Word in Selected Hindu Tantras.</i> Trans. Jacques Gontier. Albany: SUNY Press, 1990.<br>
+    Brooks, Douglas Renfrew. <i>The Secret of the Three Cities: An Introduction to Hindu Śākta Tantrism.</i> Chicago: University of Chicago Press, 1990.<br>
+    Gupta, Sanjukta, Dirk Jan Hoens, and Teun Goudriaan. <i>Hindu Tantrism.</i> Leiden: Brill, 1979.<br>
+    Gonda, Jan. <i>Vedic Literature.</i> Wiesbaden: Otto Harrassowitz, 1975.<br>
+    Staal, Frits. <i>Discovering the Vedas.</i> New Delhi: Penguin, 2008.<br>
+    Lopez, Donald S., Jr. <i>Prisoners of Shangri-La: Tibetan Buddhism and the West.</i> Chicago: University of Chicago Press, 1998.<br>
+    Thurman, Robert, trans. <i>The Central Philosophy of Tibet.</i> Princeton: Princeton University Press, 1984.<br>
+    McDaniel, June. <i>Offering Flowers, Feeding Skulls: Popular Goddess Worship in West Bengal.</i> New York: Oxford University Press, 2004.<br>
+    Sircar, D. C. <i>Indian Epigraphy.</i> Delhi: Motilal Banarsidass, 1965.<br>
+    Balota, David A., and James I. Yap. "Repetition Priming." In <i>Handbook of Psycholinguistics</i>, ed. Morton Ann Gernsbacher. San Diego: Academic Press, 1994.<br>
+    Torella, Raffaele, trans. <i>The Īśvarapratyabhijñākārikā of Utpaladeva.</i> Rome: IsIAO, 1994.<br>
+    Muller-Ortega, Paul E. <i>The Triadic Heart of Śiva: Kaula Tantricism of Abhinavagupta in the Non-Dual Shaivism of Kashmir.</i> Albany: SUNY Press, 1989.<br>
+    Flood, Gavin. <i>The Tantric Body: The Secret Tradition of Hindu Religion.</i> London: I. B. Tauris, 2006.<br>
+    Clooney, Francis X. <i>Thinking Ritually: Rediscovering the Pūrva Mīmāṃsā of Jaimini.</i> Vienna: De Nobili Research Library, 1990.<br>
+    Woodroffe, Sir John (Arthur Avalon). <i>The Serpent Power.</i> Madras: Ganesh & Co., 1918; repr. various editions.
+    </p>
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin-top:24px;">Predecessor Papers in Series B</h4>
+    <p class="dim" style="font-size:14.5px;">Cultural Musings. <i>Series B, Parts I–VIII.</i> As cited in this paper's earlier editions.</p>
+  </section>
+
+  <div class="divider-orn">☆</div>
+
+  <section id="glossary">
+    <h2 class="sectiontitle" style="font-size:22px;">Glossary</h2>
+    <dl class="glossary">
+      <dt><span class="glossterm">मन्त्र</span> mantra</dt>
+      <dd>Bearing three senses across this series: counsel/deliberation, Vedic ritual utterance, and Tantric sound-technology, unified by efficacy-through-restricted-transmission logic (Part Eight, Section XXI; this paper, Section I).</dd>
+      <dt><span class="glossterm">बीज</span> bīja</dt>
+      <dd>A single seed-syllable held to condense a deity or principle into minimal phonetic compass (Section II).</dd>
+      <dt><span class="glossterm">मातृका</span> mātṛkā</dt>
+      <dd>The Sanskrit phoneme-inventory considered as a closed, generative, deity-correlated system (Section III, XXVII).</dd>
+      <dt><span class="glossterm">परा/पश्यन्ती/मध्यमा/वैखरी</span> Parā/Paśyantī/Madhyamā/Vaikharī</dt>
+      <dd>The four progressively differentiated levels of Vāk established in Part One, here mapped directly onto mantra-practice (Section IV).</dd>
+      <dt><span class="glossterm">जप</span> japa</dt>
+      <dd>Disciplined, prescribed mantra-repetition (Section V).</dd>
+      <dt><span class="glossterm">न्यास</span> nyāsa</dt>
+      <dd>Ritual placement of mantra-syllables onto the practitioner's own body (Section VI, XXVII).</dd>
+      <dt><span class="glossterm">सिद्धि</span> siddhi</dt>
+      <dd>Accomplishment; the state of full mantric efficacy (Section VII, refined at XXXI).</dd>
+      <dt><span class="glossterm">दीक्षा</span> dīkṣā</dt>
+      <dd>Formal initiatory transmission of a mantra (Section VIII).</dd>
+      <dt><span class="glossterm">नादब्रह्म</span> nāda-brahman</dt>
+      <dd>The doctrine identifying subtle sound with brahman itself (Section XIII).</dd>
+      <dt><span class="glossterm">पञ्चदशी</span> Pañcadaśī</dt>
+      <dd>The fifteen-syllable Śrī-Vidyā mantra, examined as this paper's worked capstone example (Section X, XXXIII).</dd>
+      <dt><span class="glossterm">कुण्डलिनी / षट्चक्र</span> kuṇḍalinī / ṣaṭ-cakra</dt>
+      <dd>Latent energy and the six subtle centres through which it is held to ascend, each with its own presiding bīja (Section XXVIII).</dd>
+      <dt><span class="glossterm">स्पन्द</span> spanda</dt>
+      <dd>The vibration or pulsation of consciousness itself, prior even to sound (Section XXX).</dd>
+      <dt><span class="glossterm">मन्त्रवीर्य</span> mantra-vīrya</dt>
+      <dd>A mantra's fully awakened, potency-bearing condition (Section XXXI).</dd>
+      <dt><span class="glossterm">पुरश्चरण</span> puraścaraṇa</dt>
+      <dd>The formal, decimally proportioned preliminary discipline required before a mantra is fit for ordinary use (Section XXXIV).</dd>
+      <dt><span class="glossterm">अपूर्व</span> apūrva</dt>
+      <dd>Mīmāṃsā's unseen, persisting ritual potency, compared here to mantra's own claimed causal mechanism (Section XXXV).</dd>
+    </dl>
+  </section>
+
+  <div class="divider-orn">↗</div>
+
+</main>
+
+<footer class="papertail">
+  <div class="om">ॐ तत् सत्</div>
+  <div class="omtatsat">om tat sat — That is Truth</div>
+  <div class="stamp">
+    <b>Series B · Part Nine · Extended Deep Edition, Revised and Expanded</b> · Mantra-Śāstra: Vāk's Recursive Return as Sound-Technology · 43 Sections<br>
+    Cultural Musings · Vedic &amp; Śāstric Research Platform<br>
+    Predecessor: Series B · Part Eight · Proliferation II: Arthaśāstra, Āyurveda<br>
+    Successor: Series B · Part Ten · Case Studies in Śabda-to-Śāstra Transmission
+  </div>
+</footer>
+
+</body>
+</html>
